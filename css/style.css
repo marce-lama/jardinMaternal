@@ -156,6 +156,14 @@ section {
     z-index: 9999;
 }
 
+.tituloEquipo {
+    font-family: 'Baloo 2', cursive;
+    font-size: 50px;
+    color: rgb(73, 173, 94);
+    text-align: center;
+    justify-content: center;
+}
+
 .equipo {
     background-image: url(/image/fondoEquipo.png);
     background-size: cover;
@@ -169,6 +177,17 @@ section {
     text-align: center;
     justify-content: center;
     justify-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.cell{
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5%;
+    border-color: rgb(73, 173, 94);
     
+}
+
+.imagenDocente{
+    border-radius: 5%;
 }
