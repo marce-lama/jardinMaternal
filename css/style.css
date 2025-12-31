@@ -155,3 +155,20 @@ section {
     right: 20px;
     z-index: 9999;
 }
+
+.equipo {
+    background-image: url(/image/fondoEquipo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;   /* ocupa toda la pantalla */
+}
+
+.contenedorDocentes{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 150px;
+    
+}
