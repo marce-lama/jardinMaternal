@@ -1,0 +1,14 @@
+[
+    {"id":1, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":2, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":3, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":4, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":5, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":6, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":7, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":8, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":9, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":10, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":11, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"},
+    {"id":12, "nombre":"Rocio Resino", "cargo": "Directora", "imagen": "/image/docente.png"}
+]

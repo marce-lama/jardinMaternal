@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
+.textoJardin{
+    max-width: 50vw;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
 .navbar{
     margin-top: 0px;
+    height: 60px;
 }
 .navbar-item{
     color: white !important;
