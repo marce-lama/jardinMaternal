@@ -131,3 +131,17 @@ section {
 .field {
     width: 50%;
 }
+
+.contenedorLogoWhatapp{
+    display: flex;
+    align-items: center;
+}
+
+.logoWhatsapp {
+    max-width: 5%;
+    margin-left: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
