@@ -72,14 +72,14 @@ section {
 }
 
 .bienvenido {
-    font-family: 'Baloo 2', cursive; 
+    font-family: 'Nunito', sans-serif;
     font-size: 3rem;
     color: #FFFDF5;
     margin-bottom: 10px;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 5);
 }
 .titulo-inicio{
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Nunito', sans-serif;
     font-size: 4rem;
     font-weight: 800; /* NEGRITA */
     color: #FFFDF5;
@@ -89,7 +89,8 @@ section {
 
 /*Poner un stylo para que sea automatico  */
 #historia {
-    background-image: url(/image/historia.png);
+    /* background-image: url(/image/historia.png); */
+    background-color: rgb(254, 248, 229);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +102,7 @@ section {
 }
 
 .historia{
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Nunito', sans-serif;
 
     text-align: center;
     justify-content: center;
@@ -122,7 +123,7 @@ section {
 }
 
 .contenedorImagenHistoria {
-    
+
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
@@ -134,13 +135,77 @@ section {
     border-radius: 5%;
 }
 
+.tituloEquipo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color: rgb(73, 173, 94);
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.equipo {
+    /* background-image: url(/image/fondoEquipo.png); */
+    background-color: rgb(233, 243, 252);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;   /* ocupa toda la pantalla */
+}
+
+.contenedorDocentes{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cell{
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5%;
+    border-color: rgb(73, 173, 94);
+
+}
+
+.imagenDocente{
+    border-radius: 5%;
+}
+
+
 #contacto{
     justify-items: center;
+    background-color: rgb(208, 219, 124);
+    padding-bottom: 50px;
+}
+
+.tituloContacto{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color: rgb(73, 173, 94);
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.direccionJardin{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    
 }
 
 .field {
-    width: 50%;
+    width: 100%;
 }
+
 
 .contenedorLogoWhatapp{
     display: flex;
@@ -156,38 +221,39 @@ section {
     z-index: 9999;
 }
 
-.tituloEquipo {
-    font-family: 'Baloo 2', cursive;
-    font-size: 50px;
-    color: rgb(73, 173, 94);
-    text-align: center;
+.contenedorContactos{
     justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
-.equipo {
-    background-image: url(/image/fondoEquipo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;   /* ocupa toda la pantalla */
+.contenedorMapa{
+    text-align: center;
 }
 
-.contenedorDocentes{
+.mapaG{
+    border-radius: 5%;
+}
+
+
+.footerContenedor{
+    display: flex;
+    list-style: none;
+    background-color: rgb(73, 173, 94);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.contenedorLogos{
+    display: inline;
+    max-width: 30px;
+    max-height: 30px;
     text-align: center;
     justify-content: center;
     justify-items: center;
-    margin-top: 50px;
 }
 
-.cell{
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 5%;
-    border-color: rgb(73, 173, 94);
-    
-}
-
-.imagenDocente{
-    border-radius: 5%;
+.colorSeccionesFooter {
+    color: white;
 }

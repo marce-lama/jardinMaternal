@@ -154,39 +154,81 @@
 
     <!-- SECCION CONTACTO DEL JARDIN -->
     <section id="contacto" class="contacto">
-        <div class="field">
-            <label class="label">Nombre</label>
-            <div class="control">
-                <input class="input" type="text" required>
+        <div class="contenedorContactos">
+            <div class="contenedorMapa">
+                <div contacto>
+                    <h2 class="tituloContacto">Contacto</h2>
+                </div>
+                <div>
+                    <iframe class="mapaG" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.6911313123956!2d-58.71168582521689!3d-34.5360525539261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd1406a758d9%3A0x98d08b13471a2502!2sJard%C3%ADn%20Maternal%20y%20de%20Infantes%20Cuentos%20y%20Cuenteretes!5e0!3m2!1ses!2sar!4v1767419783319!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                </div>
+                <div>
+                    <p class="direccionJardin">San Lorenzo 1744, San Miguel, Buenos Aires</p>
+                </div>
             </div>
-        </div>
 
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-                <input class="input" type="email" required>
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input" type="text" required>
+                </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Mensaje</label>
-            <div class="control">
-                <textarea class="textarea" required></textarea>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" required>
+                </div>
             </div>
-        </div>
-        <div class="control">
-            <button class="button is-primary">Enviar</button>
-        </div>
+            <div class="field">
+                <label class="label">Mensaje</label>
+                <div class="control">
+                    <textarea class="textarea" required></textarea>
+                </div>
+            </div>
+            <div class="control">
+                <button class="button is-primary">Enviar</button>
+            </div>
+        </div>  
     </section>
-    <div class="contenedorLogoWhatapp">
-        <a href="https://wa.me/541173656707">
-            <img class="logoWhatsapp"  src="/image/whatsappLogo.png" alt="">
-        </a>
+        <div class="contenedorLogoWhatapp">
+            <a href="https://wa.me/541173656707">
+                <img class="logoWhatsapp"  src="/image/whatsappLogo.png" alt="">
+            </a>
+        </div>
     </div>
-
 
     <!-- FOOTER -->
     <footer>
-        <h1>ACA VA EL FOOTER</h1>
+        <div class="footerContenedor">
+            <div>
+                <li>
+                    <a href="#inicio"><ul class="colorSeccionesFooter">Inicio</ul></a>
+                    <a href="#historia"><ul class="colorSeccionesFooter">Historia</ul></a>
+                    <a href="#propiuestaEducativa"><ul class="colorSeccionesFooter">Propuesta Educativa</ul></a>
+                    <a href="#equipo"><ul class="colorSeccionesFooter">Equipo</ul></a>
+                    <a href="#instalaciones"><ul class="colorSeccionesFooter">Instalaciones</ul></a>
+                    <a href="#actividades"><ul class="colorSeccionesFooter">Actividades</ul></a>
+                    <a href="#horarios"><ul class="colorSeccionesFooter">Horarios</ul></a>
+                    <a href="#inscripciones"><ul class="colorSeccionesFooter">Inscripciones</ul></a>
+                    <a href="#contactos"><ul class="colorSeccionesFooter">Contacto</ul></a>
+                </li>
+            </div>
+            <div class="contenedorLogos">
+                <div>
+                    <h4>Visitanos</h4>
+                </div>
+                <div>
+                    <img src="/image/logoWhats.png" alt="">
+                </div>
+                <div>
+                    <img src="/image/logoFace.png" alt="">
+                </div>
+                <div>
+                    <img src="/image/logoInst.png" alt="">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
