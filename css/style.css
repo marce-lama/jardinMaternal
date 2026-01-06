@@ -113,9 +113,14 @@ section {
     margin-left: 30px;
 }
 
-.tituloHistoria {
-    font-size: 1.5rem;
+.titulosSecciones {
     font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .parrafoHistoria{
@@ -133,15 +138,6 @@ section {
     height: auto;
     max-width: 100%;
     border-radius: 5%;
-}
-
-.tituloEquipo {
-    font-family: 'Nunito', sans-serif;
-    font-size: 50px;
-    color: rgb(73, 173, 94);
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
 }
 
 .equipo {
@@ -177,18 +173,8 @@ section {
 
 #contacto{
     justify-items: center;
-    background-color: rgb(208, 219, 124);
+    background-color: #f3ffb4;
     padding-bottom: 50px;
-}
-
-.tituloContacto{
-    font-family: 'Nunito', sans-serif;
-    font-size: 50px;
-    color: rgb(73, 173, 94);
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-bottom: 30px;
 }
 
 .direccionJardin{
@@ -221,14 +207,25 @@ section {
     z-index: 9999;
 }
 
+
 .contenedorContactos{
+    display: flex;
     justify-content: center;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10%;
 }
 
 .contenedorMapa{
     text-align: center;
+    width: 40vw;
+    justify-items: center;
+}
+
+.contenedorForm{
+    width: 40vw;
+    justify-items: center;
+    justify-content: center;
 }
 
 .mapaG{
@@ -246,14 +243,46 @@ section {
 }
 
 .contenedorLogos{
-    display: inline;
-    max-width: 30px;
-    max-height: 30px;
+    display: flex;
+    max-width: 120px;
+    max-height: 120px;
     text-align: center;
     justify-content: center;
     justify-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.logosRedes{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.contenedorRedes{
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 130px;
+}
+
+.logoCuentos{
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .colorSeccionesFooter {
     color: white;
+}
+
+.copyright{
+    justify-content: center;
+    text-align: center;
+    background-color: #a3ffac;
+}
+
+.is-size-7{
+    text-align: center;
+    background-color: #a3ffac;
 }
