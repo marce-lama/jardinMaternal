@@ -13,6 +13,8 @@
     height: auto;
 }
 
+/* ------------------------- Menu navbar ------------------------- */
+
 .navbar{
     margin-top: 0px;
     height: 60px;
@@ -38,6 +40,8 @@
      background-color: rgb(73, 173, 94);
 }
 
+/* ------------------------- Scroll de la pagina por seccion ------------------------- */
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,10 +49,21 @@ html {
 section {
   scroll-margin-top: 3.25rem; /* altura del navbar */
 }
-.text-color{
-    color: white;
+
+/* ------------------------- Titulos de las secciones ------------------------- */
+
+.titulosSecciones {
+    font-family: "Segoe UI", Roboto, Arial;
+    font-size: 40px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
+/* ------------------------- Seccion Inicio ------------------------- */
 
 #inicio{
     background-image:url(/image/hero.png);
@@ -62,18 +77,6 @@ section {
     justify-content: center;
 }
 
-.titulosSecciones {
-    font-family: 'Nunito', sans-serif;
-    font-size: 40px;
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-bottom: 30px;
-}
-
-
 .contenedorBienvenido{
     min-height: 100vh;
     display: flex;
@@ -84,20 +87,15 @@ section {
 }
 
 .bienvenido {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Segoe UI", Roboto, Arial;
     font-size: 3rem;
     color: #FFFDF5;
     margin-bottom: 10px;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 5);
+    font-weight: bolder;
 }
-.titulo-inicio{
-    font-family: 'Nunito', sans-serif;
-    font-size: 4rem;
-    font-weight: 800; /* NEGRITA */
-    color: #FFFDF5;
-    letter-spacing: 2px;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 5);
-}
+
+/* ------------------------- Seccion Historia ------------------------- */
 
 /*Poner un stylo para que sea automatico  */
 #historia {
@@ -127,6 +125,7 @@ section {
     margin-bottom: auto;
     text-align: center;
 }
+
 .imagenHistoria {
     width: 80%;
     height: auto;
@@ -134,25 +133,24 @@ section {
     border-radius: 5%;
 }
 
+/* ------------------------- Seccion Propuesta Educativa ------------------------- */
+
 #propuestaEducativa{
     background-color: #ffe4e1;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-
-}
-
-.propEdu{
-    text-align: center;
-    align-items: center;
 }
 
 .parrafoProp{
-    justify-items: center;
     text-align: center;
     justify-content: center;
     margin-right: 30px;
+}
+
+.contenedorImagenProp{
+    text-align: center;
 }
 
 .propEduColumn{
@@ -162,9 +160,10 @@ section {
 .imagenProp{
     width: 80%;
     height: auto;
-    max-width: 100%;
     border-radius: 5%;
 }
+
+/* ------------------------- Seccion Equipo ------------------------- */
 
 .equipo {
     /* background-image: url(/image/fondoEquipo.png); */
@@ -172,7 +171,6 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     min-height: 100vh;   /* ocupa toda la pantalla */
 }
 
@@ -189,13 +187,13 @@ section {
     border-width: 4px;
     border-radius: 5%;
     border-color: rgb(73, 173, 94);
-
 }
 
 .imagenDocente{
     border-radius: 5%;
 }
 
+/* ------------------------- Seccion Contacto ------------------------- */
 
 #contacto{
     justify-items: center;
@@ -210,34 +208,16 @@ section {
     text-align: center;
     justify-content: center;
     margin-top: 25px;
-    margin-bottom: 75px;
-    
+    margin-bottom: 75px;  
 }
 
 .field {
     width: 100%;
 }
 
-
-.contenedorLogoWhatapp{
-    display: flex;
-    align-items: center;
-}
-
-.logoWhatsapp {
-    max-width: 5%;
-    margin-left: auto;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-}
-
-
 .contenedorContactos{
     display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: flex-start;
     gap: 10%;
 }
@@ -245,7 +225,6 @@ section {
 .contenedorMapa{
     text-align: center;
     width: 40vw;
-    justify-items: center;
 }
 
 .contenedorForm{
@@ -258,6 +237,7 @@ section {
     border-radius: 5%;
 }
 
+/* ------------------------- Footer  ------------------------- */
 
 .footerContenedor{
     display: flex;
@@ -274,7 +254,6 @@ section {
     max-height: 120px;
     text-align: center;
     justify-content: center;
-    justify-items: center;
     margin-top: 15px;
     gap: 15px;
 }
@@ -312,6 +291,18 @@ section {
     text-align: center;
     background-color: #a3ffac;
 }
+
+/* ------------------------- Logo Whatsapp ------------------------- */
+
+.logoWhatsapp {
+    max-width: 5%;
+    margin-left: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
 
 
 /* ------------------ ACA VAN LOS @MEDIA -------------------------*/
