@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <title>Cuentos y Cuenteretes</title>
 </head>
@@ -13,7 +13,7 @@
     <nav class="navbar is-fixed-top has-shadow has-background-danger-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand contenedorLogo">
             <a class="navbar-item has-text-danger" href="#inicio">
-            <img class="logo" src="/image/logo3.png" alt="">
+            <img class="logo" src="image/logo3.png" alt="">
             </a>
 
             <!-- Botón hamburguesa -->
@@ -73,7 +73,7 @@
                         en la localidad de San Miguel.
                 </div>
                 <div class="column contenedorImagenHistoria">
-                    <img class="imagenHistoria" src="/image/imagen1.png" alt="">
+                    <img class="imagenHistoria" src="image/imagen1.png" alt="">
                 </div>
             </div>
     </section>
@@ -84,7 +84,7 @@
         <h2 class="titulosSecciones">PROPUESTA EDUCATIVA</h2>
             <div class="columns propEduColumn">
                 <div class="column contenedorImagenProp">
-                    <img class="imagenProp" src="/image/PropEdu.png" alt="">
+                    <img class="imagenProp" src="image/PropEdu.png" alt="">
                 </div>
                 <div class="column">
                     <p class="parrafoProp">El jardín cuenta con espacios perfectamente diseñados para dar respuesta a las
@@ -104,47 +104,8 @@
             <h2 class="titulosSecciones">NUESTRO EQUIPO</h2>
         </div>
         <div class="fixed-grid has-3-cols">
-            <div class="grid is-row-gap-6 contenedorDocentes">
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
-                <div class="cell">
-                    <img class="imagenDocente" src="/image/docente.png" alt="">
-                    <p class="nombreDocente">Maria del Rosario</p>
-                    <p class="cargoDocente">Directora</p>
-                </div>
+            <div id="contDocentes" class="grid is-row-gap-6 contenedorDocentes">
+                <!-- Se agregan los docentes desde el array docentes.json -->
             </div>
         </div>
     </section>
@@ -233,7 +194,7 @@
                 </ul>
             </div>
             <div>
-                <img class="logoCuentos" src="/image/logo2.png" alt="">
+                <img class="logoCuentos" src="image/logo2.png" alt="">
             </div>
             <div class="contenedorRedes">
                 <div>
@@ -241,13 +202,13 @@
                 </div>
                 <div class="contenedorLogos">
                     <div>
-                        <a href=""><img src="/image/logoWhats.png" alt=""></a>
+                        <a href=""><img src="image/logoWhats.png" alt=""></a>
                     </div>
                     <div>
-                        <a href="https://www.facebook.com/share/1DVYDZp26r/"><img src="/image/logoFace.png" alt=""></a>
+                        <a href="https://www.facebook.com/share/1DVYDZp26r/"><img src="image/logoFace.png" alt=""></a>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/cuentosycuenteretes?igsh=MXVwMWc2emx1cG5m"><img src="/image/logoInst.png" alt=""></a>
+                        <a href="https://www.instagram.com/cuentosycuenteretes?igsh=MXVwMWc2emx1cG5m"><img src="image/logoInst.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -260,7 +221,8 @@
         </p>
     </footer>
             <a href="https://wa.me/541173656707">
-                <img class="logoWhatsapp"  src="/image/whatsappLogo.png" alt="">
+                <img class="logoWhatsapp"  src="image/whatsappLogo.png" alt="">
             </a>
+    <script src="js/docentes.js"></script>
 </body>
 </html>
