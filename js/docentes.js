@@ -1,3 +1,4 @@
+/* ===== Leemos el jason de docentes ===== */
 
 fetch("/data/docentes.json")
 .then(response => {
@@ -30,3 +31,5 @@ function mostrarDocentes(docentes){
     });
     
 }
+
+

@@ -1,0 +1,11 @@
+[
+  { "id": "inicio", "label": "Inicio" },
+  { "id": "historia", "label": "Historia" },
+  { "id": "propuestaEducativa", "label": "Propuesta Educativa" },
+  { "id": "equipo", "label": "Equipo" },
+  { "id": "instalaciones", "label": "Instalaciones" },
+  { "id": "actividades", "label": "Actividades" },
+  { "id": "horarios", "label": "Horarios" },
+  { "id": "inscripciones", "label": "Inscripciones" },
+  { "id": "contacto", "label": "Contacto" }
+]

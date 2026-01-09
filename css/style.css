@@ -189,8 +189,20 @@ section {
     border-color: rgb(73, 173, 94);
 }
 
+.nombreDocente{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cargoDocente{
+    font-size: 20px;
+}
+
 .imagenDocente{
     border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* ------------------------- Seccion Contacto ------------------------- */
@@ -279,6 +291,9 @@ section {
 
 .colorSeccionesFooter {
     color: white;
+}
+.lista{
+    text-decoration: none;
 }
 
 .copyright{

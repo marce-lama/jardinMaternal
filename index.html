@@ -25,16 +25,9 @@
         </div>
 
         <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-start navbar-center">
-                <a class="navbar-item" href="#inicio">Inicio</a>
-                <a class="navbar-item" href="#historia">Historia</a>
-                <a class="navbar-item" href="#propuestaEducativa">Propuesta Educativa</a>
-                <a class="navbar-item" href="#equipo">Equipo</a>
-                <a class="navbar-item" href="#instalaciones">Instalaciones</a>
-                <a class="navbar-item" href="#actividades">Actividades</a>
-                <a class="navbar-item" href="#horarios">Horarios</a>
-                <a class="navbar-item" href="#inscripciones">Inscripciones</a>
-                <a class="navbar-item" href="#contacto">Contacto</a>
+            <div id="menuNavbar" class="navbar-start navbar-center">
+                <!-- Se agregan las secciones desde el array menu.json -->
+                <!-- <a class="navbar-item" href="#inicio">Inicio</a> -->
             </div>
         </div>
     </nav>
@@ -45,7 +38,6 @@
         <div class="contenedorBienvenido">
             <h2 class="bienvenido" >BIENVENIDOS A</h2>
             <img class="textoJardin" src="/image/texto-cuentos-y-cuenteretes.png" alt="">
-            <!-- <h1 class="titulo-inicio">CUENTOS Y CUENTERETES</h1> -->
         </div>
     </section>
 
@@ -181,16 +173,9 @@
     <footer>
         <div class="footerContenedor">
             <div>
-                <ul>
-                    <li><a href="#inicio"><ul class="colorSeccionesFooter">Inicio</a></li>
-                    <li><a href="#historia"><ul class="colorSeccionesFooter">Historia</a></li>
-                    <li><a href="#propuestaEducativa"><ul class="colorSeccionesFooter">Propuesta Educativa</a></li>
-                    <li><a href="#equipo"><ul class="colorSeccionesFooter">Equipo</a></li>
-                    <li><a href="#instalaciones"><ul class="colorSeccionesFooter">Instalaciones</a></li>
-                    <li><a href="#actividades"><ul class="colorSeccionesFooter">Actividades</a></li>
-                    <li><a href="#horarios"><ul class="colorSeccionesFooter">Horarios</a></li>
-                    <li><a href="#inscripciones"><ul class="colorSeccionesFooter">Inscripciones</a></li>
-                    <li><a href="#contacto"><ul class="colorSeccionesFooter">Contacto</a></li>
+                <ul id="menuFooter">
+                    <!-- Se agregan las secciones desde el array menu.json -->
+                    <!-- <li ><a class="colorSeccionesFooter" href="#inicio">Inicio</a></li> -->
                 </ul>
             </div>
             <div>
@@ -224,5 +209,6 @@
                 <img class="logoWhatsapp"  src="image/whatsappLogo.png" alt="">
             </a>
     <script src="js/docentes.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
