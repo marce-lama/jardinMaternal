@@ -21,7 +21,7 @@ function mostrarDocentes(docentes){
     docentes.forEach(docente => {
         let contenedor = document.createElement("div"); 
         contenedor.innerHTML = `
-            <div class="cell">
+            <div class="cell tarjetaDocente">
                     <img class="imagenDocente" src="${docente.imagen}" alt="">
                     <p class="nombreDocente">${docente.nombre}</p>
                     <p class="cargoDocente">${docente.cargo}</p>

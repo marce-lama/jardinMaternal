@@ -55,7 +55,7 @@ section {
 .titulosSecciones {
     font-family: "Segoe UI", Roboto, Arial;
     font-size: 40px;
-    color: black;
+   /*color: black;*/
     font-weight: bolder;
     text-align: center;
     justify-content: center;
@@ -143,24 +143,38 @@ section {
     padding-bottom: 50px;
 }
 
-.parrafoProp{
+.grid-wrapper {
+  max-width: 1300px;   /* ajustá a gusto */
+  margin: 0 auto;
+}
+
+.contenedorProp{
     text-align: center;
     justify-content: center;
-    margin-right: 30px;
-}
-
-.contenedorImagenProp{
-    text-align: center;
-}
-
-.propEduColumn{
+    justify-items: center;
     align-items: center;
+    margin-left: 30px;
+}
+
+.contenedorSeccionProp{
+    padding-bottom: 50px;
+}
+
+.parrafoSeccionProp{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
 }
 
 .imagenProp{
-    width: 80%;
+    width: 500px;
     height: auto;
     border-radius: 5%;
+}
+
+.tituloProp{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 /* ------------------------- Seccion Equipo ------------------------- */
@@ -182,7 +196,7 @@ section {
     margin-bottom: 50px;
 }
 
-.cell{
+.tarjetaDocente{
     border-style: solid;
     border-width: 4px;
     border-radius: 5%;
@@ -216,7 +230,7 @@ section {
 .direccionJardin{
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
-    color: black;
+    /* color: black; */
     text-align: center;
     justify-content: center;
     margin-top: 25px;
