@@ -1,6 +1,6 @@
 /* ===== Leemos el jason de docentes ===== */
 
-fetch("/data/docentes.json")
+fetch("data/docentes.json")
 .then(response => {
     if(!response.ok){
         throw new Error("No se pudo cargar el archivo JSON"); 
