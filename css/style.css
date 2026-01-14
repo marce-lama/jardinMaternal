@@ -44,7 +44,10 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
+
+body { font-size: 1rem; }
 
 section {
   scroll-margin-top: 3.25rem; 
@@ -54,8 +57,7 @@ section {
 
 .titulosSecciones {
     font-family: "Segoe UI", Roboto, Arial;
-    font-size: 40px;
-   /*color: black;*/
+    font-size: clamp(1.25rem, 3.2vw, 2.5rem);
     font-weight: bolder;
     text-align: center;
     justify-content: center;
@@ -91,7 +93,7 @@ section {
 
 .bienvenido {
     font-family: "Segoe UI", Roboto, Arial;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4.5vw, 3rem);
     color: #FFFDF5;
     margin-bottom: 10px;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 5);
