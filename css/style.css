@@ -47,7 +47,9 @@ html {
   font-size: 16px;
 }
 
-body { font-size: 1rem; }
+body { 
+    font-size: 1rem;
+ }
 
 section {
   scroll-margin-top: 3.25rem; 
@@ -64,6 +66,7 @@ section {
     padding-top: 30px;
     margin-bottom: 30px;
 }
+
 
 /* ------------------------- Seccion Inicio ------------------------- */
 #inicio { min-height: calc(100vh - 60px); }
@@ -90,6 +93,7 @@ section {
     justify-content: center;
     margin-top: 20px;
 }
+
 
 .bienvenido {
     font-family: "Segoe UI", Roboto, Arial;
@@ -228,11 +232,25 @@ section {
     margin-bottom: 50px;
 }
 
-.tarjetaDocente{
-    /* border-style: solid; */
-    border-width: 4px;
-    border-radius: 5%;
-    /* border-color: rgb(73, 173, 94); */
+.card-docente { text-align: center; }
+
+/* Wrapper que fija la relación alto/ancho */
+.imagen-wrapper {
+  width: 100%;
+  max-width: 250px;   /* ancho máximo de cada imagen */
+  margin: 0 auto;
+  aspect-ratio: 3/4;  /* por ejemplo: 3 ancho : 4 alto (ajusta según tus fotos) */
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+/* Imagen dentro del wrapper: cubrir sin deformar */
+.imagen-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* cover recorta y llena el contenedor manteniendo proporción */
+  display: block;
 }
 
 .nombreDocente{
@@ -407,3 +425,108 @@ section {
 
 
 /* ------------------ ACA VAN LOS @MEDIA -------------------------*/
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* -------- Navbar -------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-center {
+    margin: 0;
+  }
+
+  .navbar-item {
+    text-align: center;
+  }
+
+  /* -------- Hero / Inicio -------- */
+  .textoJardin {
+    max-width: 80vw;
+  }
+
+  .bienvenido {
+    font-size: 1.8rem;
+  }
+
+  .contenedorBienvenido {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  /* -------- Historia -------- */
+  #historia {
+    padding: 2rem 1rem;
+  }
+
+  .contenedorParrafoHistoria {
+    margin-left: 0;
+  }
+
+  .imagenHistoria {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  /* -------- Propuesta educativa -------- */
+  #propuestaEducativa {
+    padding: 2rem 1rem;
+  }
+
+  .contenedorProp {
+    margin-left: 0;
+  }
+
+  .imagenProp {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* -------- Equipo -------- */
+  .contenedorDocentes {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nombreDocente,
+  .cargoDocente {
+    font-size: 1rem;
+  }
+
+  /* -------- Contacto -------- */
+  .contenedorContactos {
+    flex-direction: column;
+  }
+
+  .contenedorMapa,
+  .contenedorForm {
+    width: 100%;
+  }
+
+  .direccionJardin {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* -------- Footer -------- */
+  .footerContenedor {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .logoCuentos {
+    max-width: 200px;
+  }
+
+  /* -------- WhatsApp -------- */
+  .logoWhatsapp {
+    max-width: none;
+    width: 56px;
+    height: 56px;
+  }
+}
+
