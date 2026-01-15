@@ -171,11 +171,8 @@ section {
 /* ------------------------- Seccion Propuesta Educativa ------------------------- */
 
 #propuestaEducativa{
-    background-color: #ffe4e1;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+  background-color: #ffe4e1;
+    min-height: 100vh;   
 }
 
 .grid-wrapper {
@@ -220,8 +217,7 @@ section {
     background-color: #dfcae1;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;  
+    background-repeat: no-repeat;  
 }
 
 .contenedorDocentes{
