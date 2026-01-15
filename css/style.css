@@ -212,7 +212,7 @@ section {
 
 /* ------------------------- Seccion Equipo ------------------------- */
 
-.equipo {
+#equipo {
     /* background-image: url(/image/fondoEquipo.png); */
     background-color: #dfcae1;
     background-size: cover;
