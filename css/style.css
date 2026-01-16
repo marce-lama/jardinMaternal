@@ -172,7 +172,8 @@ section {
 
 #propuestaEducativa{
   background-color: #ffe4e1;
-    min-height: 100vh;   
+  min-height: auto; /* Cambia 100vh por auto */
+  padding-bottom: 3rem;   
 }
 
 .grid-wrapper {
@@ -217,7 +218,14 @@ section {
     background-color: #dfcae1;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    width: 100%;
+    padding: 2rem 0
+}
+
+#equipo .fixes-grid{
+  max-width: 100%; 
+    margin: 0;
 }
 
 .contenedorDocentes{
