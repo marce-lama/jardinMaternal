@@ -22,10 +22,11 @@ function mostrarDocentes(docentes){
         let contenedor = document.createElement("div"); 
         contenedor.innerHTML = `
             <div class="cell tarjetaDocente imagen-wrapper">
-                    <img class="imagenDocente" src="${docente.imagen}" alt="">
-                    <p class="nombreDocente">${docente.nombre}</p>
-                    <p class="cargoDocente">${docente.cargo}</p>
+                <img class="imagenDocente" src="${docente.imagen}" alt="">
             </div>
+                <p class="nombreDocente">${docente.nombre}</p>
+                <p class="cargoDocente">${docente.cargo}</p>
+            
         ` 
         contenedorDocentes.appendChild(contenedor); 
     });

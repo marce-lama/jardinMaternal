@@ -146,6 +146,11 @@ section {
     margin-left: 30px;
 }
 
+.tituloHistoria{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
 .historia{
     text-align: center;
     justify-content: center;
@@ -153,6 +158,8 @@ section {
 
 .parrafoHistoria{
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 25px; /* Esto crea el espacio perfecto y controlado */
+    line-height: 1.6;
 }
 
 .contenedorImagenHistoria {
@@ -278,7 +285,7 @@ section {
 
 /* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
 .instalaciones{
-    background-color: #FFFDF5;
+    background-color: #fffec2;
 }
 
 .contenedorInstal{
@@ -286,10 +293,26 @@ section {
     margin-right: 30px;
 }
 
+.imgInstal{
+  border-radius: 5%;
+}
 /* ------------------------- Seccion Actividades ------------------------- */
 
 
 /* ------------------------- Seccion Horarios ------------------------- */
+#horarios{
+  background-color: #cfffca;
+}
+
+.contenedorHorarios{
+  text-align: center;
+  font-weight: bold;
+}
+
+.contenedorCard{
+    width: 100%;
+    padding: 2rem
+}
 
 
 /* ------------------------- Seccion Inscripciones ------------------------- */
