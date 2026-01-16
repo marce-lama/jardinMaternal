@@ -193,7 +193,8 @@ section {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+    padding: 0 15px;
 }
 
 .contenedorSeccionProp{
@@ -309,12 +310,15 @@ section {
   font-weight: bold;
 }
 
-.contenedorCard{
+/*.contenedorCard{
     width: 100%;
     padding: 2rem
+}*/
+
+.columns.contenedorCard {
+  justify-content: center;
+  padding: 20px;
 }
-
-
 /* ------------------------- Seccion Inscripciones ------------------------- */
 
 
@@ -352,7 +356,8 @@ section {
 
 .contenedorMapa{
     text-align: center;
-    width: 40vw;
+    width: 100%;
+    max-width: 500px
 }
 
 .mapa-wrapper {
@@ -371,7 +376,8 @@ section {
 }
 
 .contenedorForm{
-    width: 40vw;
+    width: 100%;
+    max-width: 500px;
     justify-items: center;
     justify-content: center;
 }
