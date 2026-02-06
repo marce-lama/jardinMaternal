@@ -1,5 +1,5 @@
 [
-    {"id":1, "nombre":"Resino Rocío", "cargo": "Directora", "imagen": "image/docentes/resinoRocioDirectora.jpeg"},
+    {"id":1, "nombre":"Rocío Resino", "cargo": "Directora", "imagen": "image/docentes/resinoRocioDirectora.jpeg"},
     {"id":2, "nombre":"Nadia Ale", "cargo": "Representante Legal", "imagen": "image/docentes/nadiaAleRepresentanteLegal.jpeg"},
     {"id":3, "nombre":"Rocio Mosquera", "cargo": "Coordinadora Pedagógica", "imagen": "image/docentes/rocioMosqueraCoordinadoraPedagogica.jpeg"},
     {"id":4, "nombre":"Laura Maneiro", "cargo": "Administrativa", "imagen": "image/docentes/lauraManeiroAdministrativa.jpeg"},
