@@ -83,21 +83,10 @@ section {
 
 
 /* ------------------------- Seccion Inicio ------------------------- */
-#inicio { min-height: calc(100vh - 60px); }
+#inicio { min-height: calc(100vh - 60px); 
+}
 .hero-content { padding-top: clamp(2rem, 20vh, 8rem); }
 
-
-/* #inicio{
-    background-image:url(/image/hero.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;   /* ocupa toda la pantalla 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .contenedorBienvenido{
     min-height: 100vh;
@@ -156,6 +145,10 @@ section {
     justify-content: center;
 }
 
+.container{
+  margin-bottom: auto;
+}
+
 .contenedorParrafoHistoria{
     margin-left: 30px;
 }
@@ -207,8 +200,8 @@ section {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    /*margin-left: 30px;*/
     padding: 0 15px;
+    margin-bottom: auto;
 }
 
 .contenedorSeccionProp{
@@ -242,16 +235,15 @@ section {
     background-position: center;
     background-repeat: no-repeat; 
     width: 100%;
-    padding: 2rem 0
+    padding-bottom: 3rem;
 }
 
 #equipo .fixes-grid{
   max-width: 100%; 
-    margin: 0;
+  margin: 0;
 }
 
 .contenedorEquipoDocente{
-  padding: 5%;
   margin-top: 0px;
 }
 
@@ -260,7 +252,7 @@ section {
     justify-content: center;
     justify-items: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
 }
 
 .card-docente { text-align: center; }
@@ -306,6 +298,7 @@ section {
 /* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
 .instalaciones{
     background-color: #fffec2;
+    padding-bottom: 30px;
 }
 
 .contenedorInstal{
@@ -324,18 +317,13 @@ section {
 /* ------------------------- Seccion Horarios ------------------------- */
 #horarios{
   background-color: #cfffca;
+  padding-bottom: 20px;
 }
 
 .contenedorHorarios{
   text-align: center;
   font-weight: bold;
 }
-
-
-/*.contenedorCard{
-    width: 100%;
-    padding: 2rem
-}*/
 
 .columns.contenedorCard {
   justify-content: center;
@@ -359,7 +347,6 @@ section {
 .direccionJardin{
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
-    /* color: black; */
     text-align: center;
     justify-content: center;
     margin-top: 25px;
