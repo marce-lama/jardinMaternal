@@ -1,9 +1,14 @@
-
+:root {
+  color-scheme: light;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root {
+    color-scheme: light;
 }
 
 html, body{
@@ -57,6 +62,7 @@ html {
 
 body { 
     font-size: 1rem;
+    background-color: white;
  }
 
 section {
@@ -72,7 +78,7 @@ section {
     text-align: center;
     justify-content: center;
     padding-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -244,11 +250,16 @@ section {
     margin: 0;
 }
 
+.contenedorEquipoDocente{
+  padding: 5%;
+  margin-top: 0px;
+}
+
 .contenedorDocentes{
     text-align: center;
     justify-content: center;
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -306,7 +317,9 @@ section {
   border-radius: 5%;
 }
 /* ------------------------- Seccion Actividades ------------------------- */
-
+#actividades {
+  background-color: white;
+}
 
 /* ------------------------- Seccion Horarios ------------------------- */
 #horarios{
@@ -318,6 +331,7 @@ section {
   font-weight: bold;
 }
 
+
 /*.contenedorCard{
     width: 100%;
     padding: 2rem
@@ -327,8 +341,12 @@ section {
   justify-content: center;
   padding: 20px;
 }
-/* ------------------------- Seccion Inscripciones ------------------------- */
 
+
+/* ------------------------- Seccion Inscripciones ------------------------- */
+#inscripciones {
+  background-color: white;
+}
 
 /* ------------------------- Seccion Contacto------------------------- */
 
@@ -416,7 +434,7 @@ section {
 }
 
 .logosRedes{
-    color: white;
+    color: white !important; 
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
     font-weight: bolder;
@@ -537,6 +555,7 @@ section {
   }
 
   /* -------- Contacto -------- */
+
   .contenedorContactos {
     flex-direction: column;
   }
@@ -571,3 +590,44 @@ section {
   }
 }
 
+/* =================================
+   FORZAR LIGHT MODE (ignorar dark)
+   ================================= */
+
+/* Forzar esquema de color claro */
+html {
+  color-scheme: light;
+}
+
+/* Fondos blancos para secciones, cards y formularios */
+.card,
+form,
+.input,
+.textarea,
+select {
+  background-color: #ffffff !important;
+  color: #585760 !important;
+}
+
+/* Inputs y textarea */
+input,
+textarea,
+select {
+  background-color: #ffffff !important;
+  color: #585760 !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Botones */
+
+
+/* Asegurar textos legibles */
+p,
+label,
+h1, h2, h3, h4, h5, h6 {
+  color: #585760 !important;
+}
+
+.negrita{
+  color: #585760;
+}
