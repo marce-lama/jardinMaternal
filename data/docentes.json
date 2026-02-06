@@ -1,11 +1,14 @@
 [
-    {"id":1, "nombre":"María Fernanda López", "cargo": "Directora", "imagen": "image/docentes/1.webp"},
-    {"id":2, "nombre":"Carolina Gómez", "cargo": "Preceptora", "imagen": "image/docentes/2.jpg"},
-    {"id":3, "nombre":"Luciana Pérez", "cargo": "Administrativa", "imagen": "image/docentes/3.jpg"},
-    {"id":4, "nombre":"Ana Paula Rodríguez", "cargo": "Auxiliar", "imagen": "image/docentes/4.jpg"},
-    {"id":5, "nombre":"Valeria Martínez", "cargo": "Docente", "imagen": "image/docentes/5.jpg"},
-    {"id":6, "nombre":"Soledad Fernández", "cargo": "Docente", "imagen": "image/docentes/6.avif"},
-    {"id":7, "nombre":"Natalia Suárez", "cargo": "Docente", "imagen": "image/docentes/7.webp"},
-    {"id":8, "nombre":"Florencia Ramírez", "cargo": "Docente", "imagen": "image/docentes/8.avif"},
-    {"id":9, "nombre":"Cecilia Torres", "cargo": "Docente", "imagen": "image/docentes/9.jpg"}
+    {"id":1, "nombre":"Resino Rocío", "cargo": "Directora", "imagen": "image/docentes/resinoRocioDirectora.jpeg"},
+    {"id":2, "nombre":"Nadia Ale", "cargo": "Representante Legal", "imagen": "image/docentes/nadiaAleRepresentanteLegal.jpeg"},
+    {"id":3, "nombre":"Rocio Mosquera", "cargo": "Coordinadora Pedagógica", "imagen": "image/docentes/rocioMosqueraCoordinadoraPedagogica.jpeg"},
+    {"id":4, "nombre":"Laura Maneiro", "cargo": "Administrativa", "imagen": "image/docentes/lauraManeiroAdministrativa.jpeg"},
+    {"id":5, "nombre":"Belén Tejada", "cargo": "Docente", "imagen": "image/docentes/belenTejadaDocente.jpeg"},
+    {"id":6, "nombre":"Eliana Saldaña", "cargo": "Docente", "imagen": "image/docentes/elianaSaldañaDocente.jpeg"},
+    {"id":7, "nombre":"Karen Hernandez", "cargo": "Docente", "imagen": "image/docentes/karenHernandezDocente.jpeg"},
+    {"id":8, "nombre":"Leila Saldaña", "cargo": "Docente", "imagen": "image/docentes/leilaSaldañaDocente.jpeg"},
+    {"id":9, "nombre":"Lucía Torres", "cargo": "Docente", "imagen": "image/docentes/luciaTorresDocente.jpeg"},
+    {"id":10, "nombre":"Micaela Vizcarra", "cargo": "Docente", "imagen": "image/docentes/micaelaVizcarraDocente.jpeg"},
+    {"id":11, "nombre":"Miss Estefanía Silveira", "cargo": "Docente de Inglés", "imagen": "image/docentes/missEstefaniaSilveiraDocenteDeIngles.jpeg"},
+    {"id":12, "nombre":"Tamara Cardozo", "cargo": "Docente", "imagen": "image/docentes/tamaraCardozoDocente.jpeg"}
 ]
