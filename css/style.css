@@ -52,6 +52,17 @@ html, body{
 .navbar-menu {
      background-color: rgb(73, 173, 94);
 }
+/* -------------------------Navbar Menu Hamburguesa ----------------------------------*/
+
+.navbar-menu {
+  background-color: rgb(73, 173, 94) !important; 
+  
+}
+
+.navbar-burger span {
+  background-color: white;
+}
+
 
 /* ------------------------- Scroll de la pagina por seccion ------------------------- */
 
@@ -337,6 +348,21 @@ section {
   background-color: white;
 }
 
+.containerInscrip{
+  padding-bottom: 40px;
+}
+
+.colorArticle1{
+  background-color: hsl(6, 85%, 87%) !important;
+}
+
+.colorArticle2{
+  background-color: #ffe4e1 !important;
+}
+
+.colorArticle3 {
+  background-color: white !important;
+}
 /* ------------------------- Seccion Contacto------------------------- */
 
 #contacto{
@@ -618,4 +644,76 @@ h1, h2, h3, h4, h5, h6 {
 
 .negrita{
   color: #585760;
+}
+
+
+@media screen and (max-width: 1023px) {
+    /* Forzamos a que la grilla sea una sola columna */
+    .contenedorProp {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Quitamos el comportamiento de 'cell' que puede estar bloqueando el orden */
+    .contenedorProp .cell {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* Si el orden en el HTML es: Img1, Txt1, Txt2, Img2, Img3, Txt3, Txt4, Img4
+       Asignamos órdenes específicos para intercalarlos manualmente:
+    */
+
+    /* Bloque 1 */
+    .contenedorProp .cell:nth-child(1) { order: 2; } /* Imagen 1 va segunda */
+    .contenedorProp .cell:nth-child(2) { order: 1; } /* Texto 1 va primero */
+
+    /* Bloque 2 (Este ya venía bien, pero aseguramos) */
+    .contenedorProp .cell:nth-child(3) { order: 3; } /* Texto 2 va tercero */
+    .contenedorProp .cell:nth-child(4) { order: 4; } /* Imagen 2 va cuarta */
+
+    /* Bloque 3 */
+    .contenedorProp .cell:nth-child(5) { order: 6; } /* Imagen 3 va sexta */
+    .contenedorProp .cell:nth-child(6) { order: 5; } /* Texto 3 va quinto */
+
+    /* Bloque 4 */
+    .contenedorProp .cell:nth-child(7) { order: 7; } /* Texto 4 va séptimo */
+    .contenedorProp .cell:nth-child(8) { order: 8; } /* Imagen 4 va octava */
+
+    /* Espaciado para que no queden pegados */
+    .es-imagen {
+        margin-bottom: 40px !important;
+    }
+    .es-texto {
+        margin-bottom: 10px !important;
+    }
+}
+
+
+/* Estilo para la imagen de reemplazo en mobile */
+.hero-con-fondo {
+    position: relative;
+    background-color: #48c78e; /* Verde Bulma de respaldo */
+    /* USÁ LA RUTA CON ../ PARA SALIR DE LA CARPETA CSS */
+    background-image: url('../image/hero-fallback.jpg') !important; 
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+    #heroVideo {
+        display: none !important; /* Oculta el video en móvil */
+    }
+    .hero-con-fondo {
+        min-height: 350px !important; /* Asegura que se vea la imagen */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* En desktop el video tapa el fondo, así que no hay problema */
+    .hero-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
