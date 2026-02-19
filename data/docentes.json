@@ -1,14 +1,14 @@
 [
-    {"id":1, "nombre":"Rocío Resino", "cargo": "Directora", "imagen": "image/docentes/resinoRocioDirectora.jpeg"},
-    {"id":2, "nombre":"Nadia Ale", "cargo": "Representante Legal", "imagen": "image/docentes/nadiaAleRepresentanteLegal.jpeg"},
-    {"id":3, "nombre":"Rocio Mosquera", "cargo": "Coordinadora Pedagógica", "imagen": "image/docentes/rocioMosqueraCoordinadoraPedagogica.jpeg"},
-    {"id":4, "nombre":"Laura Maneiro", "cargo": "Administrativa", "imagen": "image/docentes/lauraManeiroAdministrativa.jpeg"},
-    {"id":5, "nombre":"Belén Tejada", "cargo": "Docente", "imagen": "image/docentes/belenTejadaDocente.jpeg"},
-    {"id":6, "nombre":"Eliana Saldaña", "cargo": "Docente", "imagen": "image/docentes/elianaSaldañaDocente.jpeg"},
-    {"id":7, "nombre":"Karen Hernandez", "cargo": "Docente", "imagen": "image/docentes/karenHernandezDocente.jpeg"},
-    {"id":8, "nombre":"Leila Saldaña", "cargo": "Docente", "imagen": "image/docentes/leilaSaldañaDocente.jpeg"},
-    {"id":9, "nombre":"Lucía Torres", "cargo": "Docente", "imagen": "image/docentes/luciaTorresDocente.jpeg"},
-    {"id":10, "nombre":"Micaela Vizcarra", "cargo": "Docente", "imagen": "image/docentes/micaelaVizcarraDocente.jpeg"},
-    {"id":11, "nombre":"Miss Estefanía Silveira", "cargo": "Docente de Inglés", "imagen": "image/docentes/missEstefaniaSilveiraDocenteDeIngles.jpeg"},
-    {"id":12, "nombre":"Tamara Cardozo", "cargo": "Docente", "imagen": "image/docentes/tamaraCardozoDocente.jpeg"}
+    {"id":1, "nombre":"Rocío", "cargo": "Directora", "imagen": "image/docentes/resinoRocioDirectora.jpeg"},
+    {"id":2, "nombre":"Nadia", "cargo": "Representante Legal", "imagen": "image/docentes/nadiaAleRepresentanteLegal.jpeg"},
+    {"id":3, "nombre":"Rocio", "cargo": "Coordinadora Pedagógica", "imagen": "image/docentes/rocioMosqueraCoordinadoraPedagogica.jpeg"},
+    {"id":4, "nombre":"Laura", "cargo": "Administrativa", "imagen": "image/docentes/lauraManeiroAdministrativa.jpeg"},
+    {"id":5, "nombre":"Belén", "cargo": "Docente", "imagen": "image/docentes/belenTejadaDocente.jpeg"},
+    {"id":6, "nombre":"Eliana", "cargo": "Docente", "imagen": "image/docentes/elianaSaldañaDocente.jpeg"},
+    {"id":7, "nombre":"Karen", "cargo": "Docente", "imagen": "image/docentes/karenHernandezDocente.jpeg"},
+    {"id":8, "nombre":"Leila", "cargo": "Docente", "imagen": "image/docentes/leilaSaldañaDocente.jpeg"},
+    {"id":9, "nombre":"Lucía", "cargo": "Docente", "imagen": "image/docentes/luciaTorresDocente.jpeg"},
+    {"id":10, "nombre":"Micaela", "cargo": "Docente", "imagen": "image/docentes/micaelaVizcarraDocente.jpeg"},
+    {"id":11, "nombre":"Miss Estefanía", "cargo": "Docente de Inglés", "imagen": "image/docentes/missEstefaniaSilveiraDocenteDeIngles.jpeg"},
+    {"id":12, "nombre":"Tamara", "cargo": "Docente", "imagen": "image/docentes/tamaraCardozoDocente.jpeg"}
 ]
