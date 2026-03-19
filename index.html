@@ -35,10 +35,24 @@
 
   <!------------------------------- SECCION PRINCILA BIENVENIDOS------------------------------->
 
-    <section id="inicio" class="hero is-large is-info">
-        <video id="heroVideo" class="hero-video" autoplay muted playsinline preload="auto"><source src="videos/hero3.mp4" type="video/mp4"></video>
+   <!--- <section id="inicio" class="hero is-fullheight">
+        <video id="heroVideo" class="hero-video-bg" autoplay muted playsinline preload="auto">
+            <source src="videos/hero3.mp4" type="video/mp4">
+        </video>
     </section>
+---->
 
+<section id="inicio">
+    <video id="heroVideo" class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="videos/hero3.mp4" type="video/mp4">
+    </video>
+    
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content-fix">
+       
+    </div>
+</section>
    
      <!------------------------------- SECCION HISTORIA DEL JARDIN ------------------------------->
 
@@ -61,6 +75,10 @@
             </div>
         </div>
     </section>
+
+    <!------------------------------- SECCION NOVEDADES ------------------------------->
+    
+    
 
     <!------------------------------- SECCION PROPUESTA EDUCATIVA ------------------------------->
     
@@ -113,6 +131,9 @@
             <div class="fixed-grid has-3-cols has-2-cols-mobile">
                 <div id="contDocentes" class="grid is-row-gap-6 contenedorDocentes card-docente">
                     <!-- Se agregan los docentes desde el array docentes.json -->
+                </div>
+                <div class="buttons">
+                     <button id="botonExpan" type="button" class="button is-primary"> Ver más</button>
                 </div>
             </div>
         </div>

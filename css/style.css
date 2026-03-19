@@ -94,8 +94,49 @@ section {
 
 
 /* ------------------------- Seccion Inicio ------------------------- */
-#inicio { min-height: calc(100vh - 60px); 
+/* --- BLOQUE UNIFICADO HERO --- */
+#inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura total de pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #48c78e; /* Color si falla el video */
 }
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    display: block !important; /* Aseguramos que se vea siempre */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); /* Oscurece un poquito para leer el texto */
+    z-index: 1;
+}
+
+.hero-content-fix {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.hero-content {
+    position: relative;
+    z-index: 2; /* Por encima del video y el overlay */
+    text-align: center;
+    width: 100%;
+}
+
 .hero-content { padding-top: clamp(2rem, 20vh, 8rem); }
 
 
@@ -126,21 +167,6 @@ section {
 }
 
 /* VIDEO FULL COVER */
-.hero-video {
-  position: absolute;
-  inset: 0;              
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  padding-top: 30vh;
-}
 
 
 
@@ -701,9 +727,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 1023px) {
-    #heroVideo {
-        display: none !important; /* Oculta el video en móvil */
-    }
     .hero-con-fondo {
         min-height: 350px !important; /* Asegura que se vea la imagen */
     }
@@ -716,4 +739,55 @@ h1, h2, h3, h4, h5, h6 {
         height: 100%;
         object-fit: cover;
     }
+}
+
+
+
+-------------------------- Aplicamos estilos para las tarjetas de los docentes ------------------
+ 
+
+/* CONTENEDOR GRID */
+#contDocentes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* TARJETA */
+.tarjetaDocente {
+  background: #f9fafb; /* gris muy suave */
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.25s ease;
+  border: 1px solid #e5e7eb;
+}
+
+/* HOVER SUAVE */
+.tarjetaDocente:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEN */
+.imagenDocente {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* NOMBRE */
+.nombreDocente {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* CARGO */
+.cargoDocente {
+  font-size: 14px;
+  color: #6b7280;
 }
