@@ -106,7 +106,7 @@ section {
     background-color: #48c78e; /* Color si falla el video */
 }
 
-.hero-video-bg {
+/*.hero-video-bg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,7 +115,17 @@ section {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: 0;
-    display: block !important; /* Aseguramos que se vea siempre */
+    display: block !important; /* Aseguramos que se vea siempre 
+}*/
+
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-overlay {
@@ -333,6 +343,23 @@ section {
     margin: 0 auto;
 }
 
+.contenedorBoton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+.buttonEquipo{
+  background-color: #ac8faf !important;
+}
+
+.button.is-outlined{
+  color: white !important;
+  border-color: white !important;
+}
+
+
 /* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
 .instalaciones{
     background-color: #fffec2;
@@ -450,6 +477,11 @@ section {
 
 .mapaG{
     border-radius: 5%;
+}
+
+.buttonContact{
+  background-color: rgb(73, 173, 94) !important;
+  color: white !important;
 }
 
 /* ------------------------- Footer  ------------------------- */
@@ -741,8 +773,45 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* HERO ADAPTATIVO PARA MÓVIL */
+@media screen and (max-width: 768px) {
 
+  #inicio {
+    height: auto;           /* contenedor se ajusta al contenido */
+    min-height: 300px;      /* mínimo para que se vea bien */
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px; /* 60px del navbar + 10px extra */
+  }
 
+  .hero-video-bg {
+    position: absolute;     /* video full cover, no se achica */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  /* Overlay sigue cubriendo video */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* El contenido del hero separado del navbar */
+  .hero-content-fix {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 100px;  /* espacio arriba entre navbar y contenido */
+    margin-bottom: 50px; /* espacio abajo si querés */
+    padding: 0 1rem;  /* separación horizontal */
+  }
+}
 -------------------------- Aplicamos estilos para las tarjetas de los docentes ------------------
  
 
@@ -790,4 +859,15 @@ h1, h2, h3, h4, h5, h6 {
 .cargoDocente {
   font-size: 14px;
   color: #6b7280;
+}
+
+
+@media (max-width: 768px) {
+  .contenedorBoton {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
