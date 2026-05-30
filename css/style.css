@@ -59,8 +59,8 @@ html, body{
   
 }
 
-.navbar-burger span {
-  background-color: white;
+.navbar-burger{
+  color: white !important;
 }
 
 
@@ -270,7 +270,7 @@ section {
 .tituloProp{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.25rem;
 }
 
 /* ------------------------- Seccion Equipo ------------------------- */
