@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripcion Google -->
+    <meta name="description" content="Jardín Maternal Cuentos y Cuenteretes en San Miguel. Acompañamos el desarrollo integral de niños y niñas en un entorno seguro, afectivo y estimulante.">
+    <!-- Palabras claves -->
+    <meta name="keywords" content="jardín maternal, jardín infantil, educación inicial, San Miguel, primera infancia, sala maternal">
+    <!-- Vista al compartir el enlace -->
+    <meta property="og:title" content="Jardín Maternal Cuentos">
+    <meta property="og:description" content="Un espacio de aprendizaje, cuidado y crecimiento para los más pequeños.">
+    <meta property="og:image" content="https://tu-dominio.com/image/portada.jpg">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <!-- Logo junto al titulo de la pestaña -->
+    <link rel="icon" type="image/png" href="./image/logo.png">
     <title>Cuentos y Cuenteretes</title>
-</head>
+</head> 
 <body>
 
    <!------------------------------- CODIGO DEL NAVBAR ------------------------------->
@@ -35,13 +47,6 @@
 
   <!------------------------------- SECCION PRINCILA BIENVENIDOS------------------------------->
 
-   <!--- <section id="inicio" class="hero is-fullheight">
-        <video id="heroVideo" class="hero-video-bg" autoplay muted playsinline preload="auto">
-            <source src="videos/hero3.mp4" type="video/mp4">
-        </video>
-    </section>
----->
-
 <section id="inicio">
     <video id="heroVideo" class="hero-video-bg" autoplay muted loop playsinline preload="auto">
         <source src="videos/hero3.mp4" type="video/mp4">
@@ -60,7 +65,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column contenedorParrafoHistoria">
-                    <h2 class="tituloHistoria"><strong class="titulosSecciones negrita"> NUESTRA HISTORIA </strong></h2>
+                    <h1 class="tituloHistoria"><strong class="titulosSecciones negrita"> NUESTRA HISTORIA </strong></h1>
                     <p class="parrafoHistoria">  
                     La historia del jardín maternal y de infantes “Cuentos y Cuenteretes” comenzó a principios del año 2018, con el propósito de dar respuesta a muchas familias que necesitaban un espacio donde sus niños y niñas fueran educados y cuidados con amor, respeto y dedicación. Así fue como Laura y Julieta, madre e hija, dieron inicio a este proyecto, pensado para que cada niño y niña pueda sentirse a gusto, contenido, amado y respetado.
                     <p class="parrafoHistoria">El jardín ofrece una educación basada en valores fundamentales como el respeto, la tolerancia y la paciencia, comprendiendo que los adultos cumplen un rol clave como acompañantes en la etapa más importante del crecimiento de los niños y niñas.</p> 
@@ -76,15 +81,12 @@
         </div>
     </section>
 
-    <!------------------------------- SECCION NOVEDADES ------------------------------->
-    
-    
 
     <!------------------------------- SECCION PROPUESTA EDUCATIVA ------------------------------->
     
     <section id="propuestaEducativa">
-        <div>
-            <div class="contenedorSeccionProp">
+        <div class="contenedorSeccionProp">
+            <div class="seccionProp">
                 <h2 class="titulosSecciones">PROPUESTA EDUCATIVA</h2>
                 <p class="parrafoSeccionProp">En Cuentos y Cuenteretes creemos que cada niño y niña aprende mejor cuando se siente seguro, acompañado y motivado. Nuestra propuesta educativa se basa en cuatro ejes fundamentales que guían cada una de nuestras actividades y experiencias diarias.</p>
             </div>
@@ -253,8 +255,11 @@
                     <p class="direccionJardin">San Lorenzo 1744, San Miguel, Buenos Aires</p>
                 </div>
             </div>
-            <form action="https://formsubmit.co/marcelolama.27@gmail.com" method="POST" class="form">
+            <form action="https://formspree.io/f/xnjrklre" method="POST" class="form">
                 <div class="contenedorForm">
+                    <div>
+                        <input type="hidden" name="_subject" value="Nueva consulta desde la web del Jardín Maternal">
+                    </div>
                     <div class="field">
                         <label class="label">Nombre</label>
                         <div class="control">

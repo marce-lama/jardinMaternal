@@ -247,12 +247,12 @@ section {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    padding: 0 15px;
-    margin-bottom: auto;
+    padding-top: 3rem;
 }
 
 .contenedorSeccionProp{
-    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .parrafoSeccionProp{
@@ -605,6 +605,8 @@ section {
   /* -------- Propuesta educativa -------- */
   #propuestaEducativa {
     padding: 2rem 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .contenedorProp {
@@ -614,6 +616,11 @@ section {
   .imagenProp {
     max-width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .contenedorSeccionProp{
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
   }
 
   /* -------- Equipo -------- */
@@ -680,6 +687,10 @@ form,
 select {
   background-color: #ffffff !important;
   color: #585760 !important;
+}
+
+.form{
+  background-color: transparent !important;
 }
 
 /* Inputs y textarea */
