@@ -147,6 +147,54 @@
         <h2 class="titulosSecciones">NUESTRAS INSTALACIONES</h2>
             <div class="container">
                 <div class="contenedorInstal">
+                    <!--
+                    <div class="fixed-grid has-4-cols">
+                        <div class="grid">
+                            <div class="cell imagen-wrapper-instal">
+                                <figure  class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/1hallDeEntrada.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/2biblioteca.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/3sum.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/4salaCeleste.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/5salaVerde.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/6salaDeDormir.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/7patio.jpeg" />
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128">
+                                    <img class="imgInstal" src="/image/instalaciones/8patio2.jpeg" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+
                     <div class="columns is-multiline is-centered">
                         <div class="column is-8">
                             <figure class="image is-16by9">
@@ -168,6 +216,13 @@
    
     <section id="actividades" class="actividades">
         <h2 class="titulosSecciones">ACTIVIDADES</h2>
+
+        <div class="containerActivity fixed-grid has-8-cols has-2-cols-mobile">
+            <div id="contenedorActividades" class="grid is-gap-0">
+                <!--Se agregan las imagenes de actividades desde el array actividades.json -->
+            </div>
+        </div>
+       
     </section>
 
      <!------------------------------- SECCION HORARIOS DEL JARDIN ------------------------------->
@@ -327,8 +382,18 @@
             <a href="https://wa.me/541173656707">
                 <img class="logoWhatsapp"  src="image/whatsappLogo.png" alt="">
             </a>
+
+    <div id="modalImagen" class="modal">
+        <span id="cerrarModal" class="cerrar">&times;</span>
+
+        <img id="imagenModal" class="contenidoModal" src="" alt="">
+    </div>
+
     <script src="js/docentes.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/actividades.js"></script>
+
+    
 </body>
 </html>

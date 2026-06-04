@@ -1,0 +1,10 @@
+[
+    {"id":1, "lugar":"Hall de Entrada", "imagen":"image/instalaciones/1hallDeEntrada.jpeg"},
+    {"id":2, "lugar":"Biblioteca", "imagen":"image/instalaciones/2biblioteca.jpeg"},
+    {"id":3, "lugar":"Sum", "imagen":"image/instalaciones/3sum.jpeg"},
+    {"id":4, "lugar":"Sala Celeste", "imagen":"image/instalaciones/4salaCeleste.jpeg"},
+    {"id":5, "lugar":"Sala Verde", "imagen":"image/instalaciones/5salaVerde.jpeg"},
+    {"id":6, "lugar":"Sala de Dormir", "imagen":"image/instalaciones/6salaDeDormir.jpeg"},
+    {"id":7, "lugar":"Patio", "imagen":"image/instalaciones/7patio.jpeg"},
+    {"id":8, "lugar":"Patio", "imagen":"image/instalaciones/8patio2.jpeg"}
+]

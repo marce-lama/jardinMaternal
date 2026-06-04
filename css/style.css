@@ -374,10 +374,55 @@ section {
 .imgInstal{
   border-radius: 5%;
 }
+
+
 /* ------------------------- Seccion Actividades ------------------------- */
 #actividades {
   background-color: white;
 }
+
+#contenedorActividades{
+  padding: 2rem;
+}
+
+.containerActivity{
+  margin-top: -20px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0,0,0,.9);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoModal{
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.cerrar{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.linkImagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
 
 /* ------------------------- Seccion Horarios ------------------------- */
 #horarios{
