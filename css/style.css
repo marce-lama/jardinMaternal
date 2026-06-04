@@ -344,10 +344,8 @@ section {
 }
 
 .contenedorBoton {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-  margin-right: 70px;
+  text-align: center;
+    margin: 2rem 0 2rem 0;
 }
 
 .buttonEquipo{
@@ -358,7 +356,6 @@ section {
   color: white !important;
   border-color: white !important;
 }
-
 
 /* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
 .instalaciones{
@@ -450,6 +447,15 @@ section {
 
 .linkImagen:hover img{
     transform: scale(1.05);
+}
+
+.buttonActividad{
+  background-color: #6b7280 !important; 
+}
+
+.contenedorBotonAct{
+    text-align: center;
+    margin: -2rem 0 2rem 0;
 }
 
 

@@ -1,4 +1,6 @@
-let listaActividades = []; 
+let listaActividades = [];
+let fotosMostradas = 0;
+const cantidadPorCarga = 8;
 
 fetch("data/actividades.json")
 .then(response => {
@@ -10,7 +12,6 @@ fetch("data/actividades.json")
 .then(actividades => {
     listaActividades = actividades; 
     mostrarActividades(); 
-    agregarEventosModal();
 })
 .catch(error =>{
     console.log("Error: ", error);
@@ -18,9 +19,9 @@ fetch("data/actividades.json")
 
 function mostrarActividades(){
     const contActividades = document.querySelector("#contenedorActividades"); 
-    contActividades.innerHTML = ""; 
     
-    listaActividades.forEach(actividad => {
+    for(let i = fotosMostradas; i < fotosMostradas + cantidadPorCarga && i < listaActividades.length; i++){
+        const actividad = listaActividades[i];
         let contenedor = document.createElement("div");
 
         contenedor.classList.add("cell", "imgActividades"); 
@@ -33,11 +34,43 @@ function mostrarActividades(){
                             data-imagen="${actividad.imagen}">
                     </a>
                 </div>
-        `
+        `;
         contActividades.appendChild(contenedor); 
         console.log(actividad.id)
-    });
-}
+    }
+    fotosMostradas += cantidadPorCarga; 
+    agregarEventosModal(); 
+
+    if(fotosMostradas >= listaActividades.length){
+        document.querySelector("#verMas").textContent = "Cerrar"; 
+    }
+}; 
+
+const botonVerMas = document.querySelector("#verMas");
+
+botonVerMas.addEventListener("click", () => {
+
+    if(botonVerMas.textContent === "Cerrar"){
+
+        fotosMostradas = 0;
+
+        document.querySelector("#contenedorActividades").innerHTML = "";
+
+        botonVerMas.textContent = "Ver más";
+
+        mostrarActividades();
+
+        document.querySelector("#actividades").scrollIntoView({
+            behavior: "smooth"
+        });
+
+        return;
+    }
+
+    mostrarActividades();
+
+});
+
 
 function agregarEventosModal(){
 
