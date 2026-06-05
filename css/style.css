@@ -357,9 +357,7 @@ section {
   border-color: white !important;
 }
 
-.buttonGracias{
-  background-color: rgb(98, 97, 97) !important;
-}
+
 
 /* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
 .instalaciones{
@@ -569,42 +567,6 @@ section {
   color: white !important;
 }
 
-.bodyGracias{
-   min-height: 100vh;
-    background-color: #f3ffb4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logoGracias{
- text-align: center;
-}
-
-.logoCuentos {
-  text-align: center;
-}
-.containerGracias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.containerGracias img {
-    height: 150px;
-    width: auto;
-}
-
-.gracias{
-  text-align: center;
-}
-
-.textoGracias{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 
 /* ------------------------- Footer  ------------------------- */
 
@@ -771,19 +733,6 @@ section {
     margin-bottom: 2rem;
   }
 
-  @media (max-width: 768px) {
-    .containerGracias {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.1rem;
-    }
-  }
-
-.gracias{
-  padding: 0.5rem;
-}
 
   /* -------- Footer -------- */
   .footerContenedor {
