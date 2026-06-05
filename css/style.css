@@ -54,10 +54,6 @@ html, body{
 }
 /* -------------------------Navbar Menu Hamburguesa ----------------------------------*/
 
-.navbar-menu {
-  background-color: rgb(73, 173, 94) !important; 
-  
-}
 
 .navbar-burger{
   color: white !important;
@@ -629,7 +625,8 @@ section {
 /* ------------------------- Logo Whatsapp ------------------------- */
 
 .logoWhatsapp {
-    max-width: 5%;
+    width: 60px;
+    height: 60px;
     margin-left: auto;
     position: fixed;
     bottom: 20px;
@@ -908,7 +905,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1rem;  /* separación horizontal */
   }
 }
--------------------------- Aplicamos estilos para las tarjetas de los docentes ------------------
+/*-------------------------- Aplicamos estilos para las tarjetas de los docentes ------------------*/
  
 
 /* CONTENEDOR GRID */
