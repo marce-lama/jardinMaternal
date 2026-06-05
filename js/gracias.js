@@ -16,4 +16,9 @@ form.addEventListener("submit", async (e) => {
     if (response.ok) {
         window.location.href = "../pages/gracias.html";
     }
+
+    if (response.ok) {
+    console.log(window.location.href);
+    window.location.href = "/jardinMaternal/pages/gracias.html";
+}
 });
