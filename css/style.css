@@ -50,7 +50,7 @@ html, body{
 }
 
 .navbar-menu {
-     background-color: rgb(73, 173, 94);
+     background-color: rgb(73, 173, 94) !important;
 }
 /* -------------------------Navbar Menu Hamburguesa ----------------------------------*/
 
@@ -622,6 +622,8 @@ section {
     background-color: #a3ffac;
 }
 
+
+
 /* ------------------------- Logo Whatsapp ------------------------- */
 
 .logoWhatsapp {
@@ -911,9 +913,15 @@ h1, h2, h3, h4, h5, h6 {
 /* CONTENEDOR GRID */
 #contDocentes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px 0;
+}
+
+@media (max-width: 768px){
+  #contDocentes{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* TARJETA */
