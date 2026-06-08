@@ -370,6 +370,57 @@ section {
   border-radius: 5%;
 }
 
+/*-------------------- */
+
+.galeria-instalaciones{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.principal{
+    grid-row: 1 / 3;
+}
+
+.galeria-instalaciones img,
+.miniaturas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.principal img{
+    min-height: 500px;
+}
+
+.secundaria img{
+    height: 245px;
+}
+
+.miniaturas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.miniaturas img{
+    height: 180px;
+}
+
+.galeria-instalaciones img,
+.miniaturas img{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.galeria-instalaciones img:hover,
+.miniaturas img:hover{
+    transform: scale(1.03);
+}
 
 /* ------------------------- Seccion Actividades ------------------------- */
 #actividades {

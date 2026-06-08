@@ -5,20 +5,24 @@ form.addEventListener("submit", async (e) => {
 
     const data = new FormData(form);
 
-    const response = await fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: {
-            Accept: "application/json"
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        console.log("Status:", response.status);
+
+        if (response.ok) {
+            window.location.href = "pages/gracias.html";
+        } else {
+            console.error("Formspree devolvió error");
         }
-    });
 
-    if (response.ok) {
-        window.location.href = "../pages/gracias.html";
+    } catch (error) {
+        console.error("Error al enviar:", error);
     }
-
-    if (response.ok) {
-    console.log(window.location.href);
-    window.location.href = "/jardinMaternal/pages/gracias.html";
-}
 });
