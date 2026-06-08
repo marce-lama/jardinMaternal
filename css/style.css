@@ -422,6 +422,30 @@ section {
     transform: scale(1.03);
 }
 
+@media (max-width: 768px){
+
+    .galeria-instalaciones{
+        grid-template-columns: 1fr;
+    }
+
+    .principal{
+        grid-row: auto;
+    }
+
+    .principal img,
+    .secundaria img,
+    .miniaturas img{
+        height: auto;
+        min-height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .miniaturas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ------------------------- Seccion Actividades ------------------------- */
 #actividades {
   background-color: white;

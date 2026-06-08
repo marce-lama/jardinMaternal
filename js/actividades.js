@@ -28,7 +28,7 @@ function mostrarActividades(){
 
         contenedor.innerHTML = `
                 <div>
-                    <a class="linkImagen">
+                    <a class="linkImagen ">
                         <img src="${actividad.imagen}"
                             alt=""
                             data-imagen="${actividad.imagen}">
