@@ -288,7 +288,7 @@ section {
 }
 
 .contenedorEquipoDocente{
-  margin-top: 0px;
+  margin-top: -50px;
 }
 
 .contenedorDocentes{
@@ -346,6 +346,7 @@ section {
 
 .buttonEquipo{
   background-color: #ac8faf !important;
+  margin-top: -30px;
 }
 
 .button.is-outlined{
@@ -420,6 +421,15 @@ section {
 .galeria-instalaciones img:hover,
 .miniaturas img:hover{
     transform: scale(1.03);
+}
+
+.ocultas{
+    display: none;
+}
+
+.buttonInstal{
+  background-color: #9370DB !important;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px){

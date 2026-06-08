@@ -30,3 +30,24 @@ function agregarEventosModalInstal() {
 }
 
 agregarEventosModalInstal();
+
+const miniaturas = document.querySelector(".miniaturas");
+const botonInstal = document.querySelector("#btnInstalaciones");
+
+botonInstal.addEventListener("click", () => {
+
+    miniaturas.classList.toggle("ocultas");
+
+    if(miniaturas.classList.contains("ocultas")){
+        botonInstal.textContent = "Ver más";
+
+        document.querySelector("#instalaciones")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }else{
+        botonInstal.textContent = "Cerrar";
+    }
+
+});

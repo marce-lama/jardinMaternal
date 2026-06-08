@@ -26,7 +26,7 @@ boton.addEventListener("click", function(e){
     expandido = !expandido; 
     mostrarDocentes();
 
-    boton.textContent = expandido ? "Ver menos" : "Ver más"; 
+    boton.textContent = expandido ? "Cerrar" : "Ver más"; 
 
     if (!expandido) {
         document.querySelector("#equipo").scrollIntoView({
