@@ -7,60 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    color-scheme: light;
-}
 
-html, body{
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.textoJardin{
-    max-width: 50vw;
-}
-
-.logo{
-    width: 80px;
-    height: auto;
-}
-
-/* ------------------------- Menu navbar ------------------------- */
-
-.navbar{
-    margin-top: 0px;
-    height: 60px;
-}
-.navbar-item{
-    color: white !important;
-}
-
-.navbar-item:hover {
-    color:rgb(73, 173, 94) !important;
-    background-color: white;
-}
-
-.navbar-center {
-  margin: 0 160px;
-}
-
-.navbar-brand{
-     background-color: rgb(73, 173, 94);
-}
-
-.navbar-menu {
-     background-color: rgb(73, 173, 94) !important;
-}
-/* -------------------------Navbar Menu Hamburguesa ----------------------------------*/
-
-
-.navbar-burger{
-  color: white !important;
-}
-
-
-/* ------------------------- Scroll de la pagina por seccion ------------------------- */
 
 html {
   scroll-behavior: smooth;
@@ -73,402 +20,871 @@ body {
  }
 
 section {
+  padding-top:2.5rem;
+  padding-bottom: 2.5rem;
   scroll-margin-top: 3.25rem; 
 }
 
-/* ------------------------- Titulos de las secciones ------------------------- */
-
-.titulosSecciones {
-    font-family: "Segoe UI", Roboto, Arial;
-    font-size: clamp(1.25rem, 3.2vw, 2.5rem);
-    font-weight: bolder;
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+/* Si quieres una sección muy compacta */
+.seccion-compacta {
+    padding-top: 1.5rem !important;
+    padding-bottom: 4rem !important;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
 
-/* ------------------------- Seccion Inicio ------------------------- */
-/* --- BLOQUE UNIFICADO HERO --- */
-#inicio {
-    position: relative;
+.container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.boton-seccion{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbarPrincipal {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh; /* Altura total de pantalla */
+
+    background-color: rgb(73, 173, 94);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+    z-index: 1000;
+}
+
+.navbarContainer {
+    display: flex;
+    width: 100%;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 1rem;
+    
+}
+
+.navbarPrincipal .container {
+    min-height: 80px;
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #48c78e; /* Color si falla el video */
+    justify-content: space-between;
 }
 
-/*.hero-video-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.logoNavbar {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.logo2 {
+    height: 45px;
+    width: auto;
+}
+
+
+#menuNavbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: rgb(73, 173, 94);
+}
+
+#menuNavbar a {
+    color: white;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color .3s;
+}
+
+#menuNavbar a:hover {
+color: black;
+}
+
+
+.navbar-burger-boton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    width: auto;
+    
+}
+
+.navbar-burger-boton{
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+
+    .navbarContainer {
+        flex-direction: column; /* Vuelve a ser columna en móviles */
+        align-items: flex-start;
+    }
+    
+    .navbar-brand {
+        width: 100%; /* Ocupa todo el ancho en móvil para el botón del menú */
+        justify-content: space-between;
+    }
+
+    .navbarPrincipal .container {
+        min-height: 70px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .logo2 {
+        height: 35px;
+    }
+
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    }
+
+    .navbar-menu.is-active {
+        display: block;
+    }
+
+    #menuNavbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+/* =========================
+   HERO
+========================= */
+
+#inicio {
+    padding: 0; 
+    margin-top: 3rem;
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    display: block !important; /* Aseguramos que se vea siempre 
-}*/
+    height: 90vh; 
+    overflow: hidden; 
+}
 
 .hero-video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: 50% 50%;
+    z-index: 0;
 }
 
 .hero-overlay {
     position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.2); /* Oscurece un poquito para leer el texto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
     z-index: 1;
 }
 
 .hero-content-fix {
     position: relative;
     z-index: 2;
-    text-align: center;
-}
-.hero-content {
-    position: relative;
-    z-index: 2; /* Por encima del video y el overlay */
-    text-align: center;
-    width: 100%;
 }
 
-.hero-content { padding-top: clamp(2rem, 20vh, 8rem); }
+@media (max-width: 768px) {
+    #inicio {
+        height: 60vh; 
+    }
 
-
-.contenedorBienvenido{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    .hero-video-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center; 
+    }
 }
 
 
-.bienvenido {
-    font-family: "Segoe UI", Roboto, Arial;
-    font-size: clamp(1.5rem, 4.5vw, 3rem);
-    color: #FFFDF5;
-    margin-bottom: 10px;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 5);
-    font-weight: bolder;
-}
+/* =========================
+   SECCIÓN HISTORIA
+========================= */
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* VIDEO FULL COVER */
-
-
-
-/* ------------------------- Seccion Historia ------------------------- */
-
-/*Poner un stylo para que sea automatico  */
 #historia {
-    /* background-image: url(/image/historia.png); */
-    background-color: rgb(254, 248, 229);
-    min-height: 100vh;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 5rem 0;
+  background-color: rgb(254, 248, 229);
 }
 
-.container{
-  margin-bottom: auto;
+#historia .columns {
+  align-items: center;
 }
 
-.contenedorParrafoHistoria{
-    margin-left: 30px;
+.contenedorParrafoHistoria {
+  padding-right: 2rem;
 }
 
-.tituloHistoria{
-    padding-top: 30px;
-    margin-bottom: 30px;
+.titulosSecciones {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.historia{
-    text-align: center;
-    justify-content: center;
+.parrafoHistoria {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: #585760;
 }
 
-.parrafoHistoria{
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 25px; /* Esto crea el espacio perfecto y controlado */
-    line-height: 1.6;
+.parrafoHistoria:last-child {
+  margin-bottom: 0;
 }
 
 .contenedorImagenHistoria {
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagenHistoria {
-    width: 80%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 5%;
-}
-
-/* ------------------------- Seccion Propuesta Educativa ------------------------- */
-
-#propuestaEducativa{
-  background-color: #ffe4e1;
-  min-height: auto; /* Cambia 100vh por auto */
-  padding-bottom: 3rem;   
-}
-
-.grid-wrapper {
-  max-width: 1300px;   
-  margin: 0 auto;
-}
-
-.contenedorProp{
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    padding-top: 3rem;
-}
-
-.contenedorSeccionProp{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.parrafoSeccionProp{
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-}
-
-.imagenProp{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 5%;
-}
-
-.tituloProp{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* ------------------------- Seccion Equipo ------------------------- */
-
-#equipo {
-    /* background-image: url(/image/fondoEquipo.png); */
-    background-color: #dfcae1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    width: 100%;
-    padding-bottom: 3rem;
-    padding: 1rem;
-}
-
-#equipo .fixes-grid{
-  max-width: 100%; 
-  margin: 0;
-}
-
-.contenedorEquipoDocente{
-  margin-top: -50px;
-}
-
-.contenedorDocentes{
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 20px;
-    margin-bottom: auto;
-}
-
-.card-docente { text-align: center; }
-
-/* Wrapper que fija la relación alto/ancho */
-.imagen-wrapper {
   width: 100%;
-  max-width: 250px;   /* ancho máximo de cada imagen */
-  margin: 0 auto;
-  aspect-ratio: 3/4;  /* por ejemplo: 3 ancho : 4 alto (ajusta según tus fotos) */
-  overflow: hidden;
-  border-radius: 8px;
-  background: #f0f0f0;
-}
-
-/* Imagen dentro del wrapper: cubrir sin deformar */
-.imagen-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* cover recorta y llena el contenedor manteniendo proporción */
+  max-width: 500px;
+  border-radius: 16px;
   display: block;
 }
 
-.nombreDocente{
-    font-weight: bold;
-    font-size: 20px;
+/* =========================
+   PROPUESTA EDUCATIVA
+========================= */
+
+#propuestaEducativa {
+  padding: 5rem 0;
+    background-color:#ffe4e1;
+
 }
 
-.cargoDocente{
-    font-size: 20px;
-}
-
-.imagenDocente{
-    width: 100%;
-    max-width: 250px;
-    height: auto; /* eliminar altura fija */
-    object-fit: cover;
-    border-radius: 5%;
-    display: block;
-    margin: 0 auto;
-}
-
-.contenedorBoton {
+.parrafoSeccionProp {
+  max-width: 800px;
+  margin: 0 auto 3rem;
   text-align: center;
-    margin: 2rem 0 2rem 0;
+  line-height: 1.8;
 }
 
-.buttonEquipo{
+.gridProp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cardPropuesta {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cardPropuesta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+}
+
+.cardPropuesta img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tituloProp {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.parrafoProp {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+  .gridProp {
+    grid-template-columns: 1fr;
+  }
+
+  .parrafoSeccionProp {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
+
+/* =========================
+   EQUIPO
+========================= */
+
+#equipo {
+  padding: 5rem 0;
+      background-color: #dfcae1;
+
+}
+
+#contDocentes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  #contDocentes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tarjetaDocente {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1rem;
+  transition: all .3s ease;
+}
+
+.tarjetaDocente:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+}
+
+.boton-seccion-equipo{
   background-color: #ac8faf !important;
-  margin-top: -30px;
+  /*margin-top: -30px;*/
 }
 
-.button.is-outlined{
+.boton-seccion-equipo.is-outlined{
   color: white !important;
   border-color: white !important;
 }
 
-
-
-/* ------------------------- Seccion Nuestras Instalaciones ------------------------- */
-.instalaciones{
-    background-color: #fffec2;
-    padding-bottom: 30px;
+.nombreDocente {
+    font-weight: bold;
 }
 
-.contenedorInstal{
-    margin-left: 30px;
-    margin-right: 30px;
+/* =========================
+   INSTALACIONES
+========================= */
+
+#instalaciones {
+  padding: 5rem 0;
+      background-color: #fffec2;
+
 }
 
-.imgInstal{
-  border-radius: 5%;
+.galeria-instalaciones {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 250px);
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-/*-------------------- */
-
-.galeria-instalaciones{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.principal{
-    grid-row: 1 / 3;
+.principal {
+  grid-row: span 2;
 }
 
 .galeria-instalaciones img,
-.miniaturas img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-}
-
-.principal img{
-    min-height: 500px;
-}
-
-.secundaria img{
-    height: 245px;
-}
-
-.miniaturas{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-}
-
-.miniaturas img{
-    height: 180px;
-}
-
-.galeria-instalaciones img,
-.miniaturas img{
-    transition: .3s;
-    cursor: pointer;
+.miniaturas img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform .3s ease;
 }
 
 .galeria-instalaciones img:hover,
-.miniaturas img:hover{
-    transform: scale(1.03);
+.miniaturas img:hover {
+  transform: scale(1.02);
 }
 
-.ocultas{
-    display: none;
+.miniaturas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.buttonInstal{
+.ocultas {
+  display: none;
+}
+
+.boton-seccion-instalaciones{
   background-color: #9370DB !important;
-  margin-top: 20px;
+  /*margin-top: -30px;*/
 }
 
-@media (max-width: 768px){
-
-    .galeria-instalaciones{
-        grid-template-columns: 1fr;
-    }
-
-    .principal{
-        grid-row: auto;
-    }
-
-    .principal img,
-    .secundaria img,
-    .miniaturas img{
-        height: auto;
-        min-height: auto;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    }
-
-    .miniaturas{
-        grid-template-columns: repeat(2, 1fr);
-    }
+.boton-seccion-instalaciones.is-outlined{
+  color: white !important;
+  border-color: white !important;
 }
 
-/* ------------------------- Seccion Actividades ------------------------- */
+@media (max-width: 768px) {
+
+  .galeria-instalaciones {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .principal {
+    grid-row: auto;
+  }
+
+  .galeria-instalaciones img {
+    height: 250px;
+  }
+
+  .miniaturas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .miniaturas img {
+    height: 180px;
+  }
+}
+
+/* =========================
+   ACTIVIDADES
+========================= */
+
 #actividades {
-  background-color: white;
+  padding: 5rem 0;
+  background-color: #DEFFA0; 
+
 }
 
-#contenedorActividades{
+#contenedorActividades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#contenedorActividades img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+#contenedorActividades img:hover {
+  transform: scale(1.03);
+}
+
+.boton-seccion-actividades{
+  background-color: #FFC5D3 !important;
+}
+
+.boton-seccion-actividades.is-outlined{
+  color: white !important;
+  border-color: white !important;
+}
+
+@media (max-width: 1024px) {
+
+  #contenedorActividades {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #contenedorActividades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================
+   HORARIOS
+========================= */
+
+#horarios{
+  background-color: #cfffca;
+  padding-bottom: 20px;
+}
+
+.contenedorHorarios{
+  text-align: center;
+  font-weight: bold;
+}
+
+.columns.contenedorCard {
+  justify-content: center;
+  padding: 20px;
+}
+
+.tarjetaHorarios{
+  transition: all 0.25s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.tarjetaHorarios:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   INSCRIPCIONES
+========================= */
+
+#inscripciones {
+  background-color: #ff94a2;
+}
+
+.containerInscrip{
+  padding-bottom: 40px;
+}
+
+.colorArticle1{
+  background-color: hsl(6, 85%, 87%) !important;
+}
+
+.colorArticle2{
+  background-color: #ffe4e1 !important;
+}
+
+.colorArticle3 {
+  background-color: white !important;
+}
+
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+#contacto {
+  padding: 5rem 0;
+  background-color: #f3ffb4;
+}
+
+.contactoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+
+
+.mapaWrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.mapaG {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  display: block;
+}
+
+.direccionJardin {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.formularioContacto {
+  background: #fff;
   padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
 
-.containerActivity{
-  margin-top: -20px;
+.field:not(:last-child) {
+  margin-bottom: 1.25rem;
 }
 
+.label {
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  border-radius: 10px;
+}
+
+.textarea {
+  min-height: 150px;
+}
+
+.boton-seccion-form{
+    background-color: rgb(73, 173, 94) !important;
+}
+
+.boton-seccion-form.is-outlined{
+    color: white !important;
+    border-color: white !important;
+}
+
+
+@media (max-width: 768px) {
+
+  #contacto {
+    padding: 4rem 0;
+  }
+
+  .contactoGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mapaG {
+    height: 300px;
+  }
+
+  .formularioContacto {
+    padding: 1.5rem;
+  }
+
+}
+
+.boton-seccion {
+  min-width: 180px;
+  border-radius: 999px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footerPrincipal {
+    background-color: rgb(73, 173, 94);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footerContenedor {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* MENÚ */
+
+.footerMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerMenu li + li {
+    margin-top: .8rem;
+}
+
+.footerMenu a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.footerMenu a:hover {
+    color: black;
+}
+
+/* LOGO */
+
+.footerLogo {
+    text-align: center;
+}
+
+.logoCuentos {
+    width: 180px;
+    height: auto;
+}
+
+/* REDES */
+
+.footerRedes {
+    text-align: center;
+}
+
+.tituloFooter {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.contenedorLogos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contenedorLogos img {
+    width: 42px;
+    height: 42px;
+    transition: transform .3s;
+}
+
+.contenedorLogos img:hover {
+    transform: scale(1.1);
+}
+
+/* PARTE INFERIOR */
+.footerDesarrollador{
+background-color: #a3ffac;
+}
+
+.footerDesarrollador p {
+    font-size: .9rem;
+    color: #777;
+    text-align: center;
+}
+
+.footerInferior {
+    background-color: #a3ffac;
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+    font-size: .9rem;
+    color: #777;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .footerContenedor {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footerMenu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footerMenu li + li {
+        margin-top: 0;
+    }
+
+    .logoCuentos {
+        width: 150px;
+    }
+}
+
+
+
+
+.botonWhatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.logoWhatsapp {
+    width: 60px;
+    height: 60px;
+    transition: transform .3s;
+}
+
+.logoWhatsapp:hover {
+    transform: scale(1.1);
+}
+
+/*
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.9);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.contenidoModal {
+    max-width: 90%;
+    max-height: 90vh;
+    
+    border-radius: 12px;
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    font-size: 3rem;
+    color: white;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}*/
 
 .modal{
     display: none;
@@ -479,6 +895,7 @@ section {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    z-index: 9999 !important;
 }
 
 .contenidoModal{
@@ -508,552 +925,4 @@ section {
     color: white;
     font-size: 40px;
     cursor: pointer;
-}
-
-.imgActividades{
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-}
-
-.linkImagen{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.linkImagen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .3s ease;
-}
-
-.linkImagen:hover img{
-    transform: scale(1.05);
-}
-
-.buttonActividad{
-  background-color: #6b7280 !important; 
-}
-
-.contenedorBotonAct{
-    text-align: center;
-    margin: -2rem 0 2rem 0;
-}
-
-
-/* ------------------------- Seccion Horarios ------------------------- */
-#horarios{
-  background-color: #cfffca;
-  padding-bottom: 20px;
-}
-
-.contenedorHorarios{
-  text-align: center;
-  font-weight: bold;
-}
-
-.columns.contenedorCard {
-  justify-content: center;
-  padding: 20px;
-}
-
-
-/* ------------------------- Seccion Inscripciones ------------------------- */
-#inscripciones {
-  background-color: #ff94a2;
-}
-
-.containerInscrip{
-  padding-bottom: 40px;
-}
-
-.colorArticle1{
-  background-color: hsl(6, 85%, 87%) !important;
-}
-
-.colorArticle2{
-  background-color: #ffe4e1 !important;
-}
-
-.colorArticle3 {
-  background-color: white !important;
-}
-/* ------------------------- Seccion Contacto------------------------- */
-
-#contacto{
-    justify-items: center;
-    background-color: #f3ffb4;
-    padding-bottom: 50px;
-}
-
-.direccionJardin{
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 75px;  
-}
-
-.field {
-    width: 100%;
-}
-
-.contenedorContactos{
-    display: flex;
-    flex-direction: column; /* mobile por defecto */
-    gap: 1rem;
-    align-items: stretch;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.contenedorMapa{
-    text-align: center;
-    width: 100%;
-    max-width: 500px
-}
-
-.mapa-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* opcional */
-  aspect-ratio: 4/3; /* moderno y simple */
-  margin: 0 auto;
-}
-.mapa-wrapper iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.contenedorForm{
-    width: 100%;
-    max-width: 500px;
-    justify-items: center;
-    justify-content: center;
-}
-
-
-.mapaG{
-    border-radius: 5%;
-}
-
-.buttonContact{
-  background-color: rgb(73, 173, 94) !important;
-  color: white !important;
-}
-
-
-/* ------------------------- Footer  ------------------------- */
-
-.footerContenedor{
-    display: flex;
-    list-style: none;
-    background-color: rgb(73, 173, 94);
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.contenedorLogos{
-    display: flex;
-    max-width: 120px;
-    max-height: 120px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 15px;
-    gap: 15px;
-}
-
-.logosRedes{
-    color: white !important; 
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-.contenedorRedes{
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.logoCuentos{
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.colorSeccionesFooter {
-    color: white;
-}
-.lista{
-    text-decoration: none;
-}
-
-.copyright{
-    justify-content: center;
-    text-align: center;
-    background-color: #a3ffac;
-}
-
-.is-size-7{
-    text-align: center;
-    background-color: #a3ffac;
-}
-
-
-
-/* ------------------------- Logo Whatsapp ------------------------- */
-
-.logoWhatsapp {
-    width: 60px;
-    height: 60px;
-    margin-left: auto;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-}
-
-
-
-/* ------------------ ACA VAN LOS @MEDIA -------------------------*/
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-
-  /* -------- Navbar -------- */
-  .navbar {
-    height: auto;
-  }
-
-  .navbar-center {
-    margin: 0;
-  }
-
-  .navbar-item {
-    text-align: center;
-  }
-
-  /* -------- Hero / Inicio -------- */
-  .textoJardin {
-    max-width: 80vw;
-  }
-
-  .bienvenido {
-    font-size: 1.8rem;
-  }
-
-  .contenedorBienvenido {
-    padding: 0 1rem;
-    text-align: center;
-  }
-
-  /* -------- Historia -------- */
-  #historia {
-    padding: 2rem 1rem;
-  }
-
-  .contenedorParrafoHistoria {
-    margin-left: 0;
-  }
-
-  .imagenHistoria {
-    width: 100%;
-    margin-top: 1.5rem;
-  }
-
-  /* -------- Propuesta educativa -------- */
-  #propuestaEducativa {
-    padding: 2rem 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .contenedorProp {
-    margin-left: 0;
-  }
-
-  .imagenProp {
-    max-width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .contenedorSeccionProp{
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-  }
-
-  /* -------- Equipo -------- */
-  .contenedorDocentes {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .nombreDocente,
-  .cargoDocente {
-    font-size: 1rem;
-  }
-
-  /* -------- Contacto -------- */
-
-  .contenedorContactos {
-    flex-direction: column;
-  }
-
-  .contenedorMapa,
-  .contenedorForm {
-    width: 100%;
-  }
-
-  .direccionJardin {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  }
-
-
-  /* -------- Footer -------- */
-  .footerContenedor {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  .logoCuentos {
-    max-width: 200px;
-  }
-
-  /* -------- WhatsApp -------- */
-  .logoWhatsapp {
-    max-width: none;
-    width: 56px;
-    height: 56px;
-  }
-}
-
-/* =================================
-   FORZAR LIGHT MODE (ignorar dark)
-   ================================= */
-
-/* Forzar esquema de color claro */
-html {
-  color-scheme: light;
-}
-
-/* Fondos blancos para secciones, cards y formularios */
-.card,
-form,
-.input,
-.textarea,
-select {
-  background-color: #ffffff !important;
-  color: #585760 !important;
-}
-
-.form{
-  background-color: transparent !important;
-}
-
-/* Inputs y textarea */
-input,
-textarea,
-select {
-  background-color: #ffffff !important;
-  color: #585760 !important;
-  border: 1px solid #ccc !important;
-}
-
-/* Botones */
-
-
-/* Asegurar textos legibles */
-p,
-label,
-h1, h2, h3, h4, h5, h6 {
-  color: #585760 !important;
-}
-
-.negrita{
-  color: #585760;
-}
-
-
-@media screen and (max-width: 1023px) {
-    /* Forzamos a que la grilla sea una sola columna */
-    .contenedorProp {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    /* Quitamos el comportamiento de 'cell' que puede estar bloqueando el orden */
-    .contenedorProp .cell {
-        width: 100% !important;
-        display: block !important;
-    }
-
-    /* Si el orden en el HTML es: Img1, Txt1, Txt2, Img2, Img3, Txt3, Txt4, Img4
-       Asignamos órdenes específicos para intercalarlos manualmente:
-    */
-
-    /* Bloque 1 */
-    .contenedorProp .cell:nth-child(1) { order: 2; } /* Imagen 1 va segunda */
-    .contenedorProp .cell:nth-child(2) { order: 1; } /* Texto 1 va primero */
-
-    /* Bloque 2 (Este ya venía bien, pero aseguramos) */
-    .contenedorProp .cell:nth-child(3) { order: 3; } /* Texto 2 va tercero */
-    .contenedorProp .cell:nth-child(4) { order: 4; } /* Imagen 2 va cuarta */
-
-    /* Bloque 3 */
-    .contenedorProp .cell:nth-child(5) { order: 6; } /* Imagen 3 va sexta */
-    .contenedorProp .cell:nth-child(6) { order: 5; } /* Texto 3 va quinto */
-
-    /* Bloque 4 */
-    .contenedorProp .cell:nth-child(7) { order: 7; } /* Texto 4 va séptimo */
-    .contenedorProp .cell:nth-child(8) { order: 8; } /* Imagen 4 va octava */
-
-    /* Espaciado para que no queden pegados */
-    .es-imagen {
-        margin-bottom: 40px !important;
-    }
-    .es-texto {
-        margin-bottom: 10px !important;
-    }
-}
-
-
-/* Estilo para la imagen de reemplazo en mobile */
-.hero-con-fondo {
-    position: relative;
-    background-color: #48c78e; /* Verde Bulma de respaldo */
-    /* USÁ LA RUTA CON ../ PARA SALIR DE LA CARPETA CSS */
-    background-image: url('../image/hero-fallback.jpg') !important; 
-    background-size: cover;
-    background-position: center;
-}
-
-@media screen and (max-width: 1023px) {
-    .hero-con-fondo {
-        min-height: 350px !important; /* Asegura que se vea la imagen */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    /* En desktop el video tapa el fondo, así que no hay problema */
-    .hero-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-/* HERO ADAPTATIVO PARA MÓVIL */
-@media screen and (max-width: 768px) {
-
-  #inicio {
-    height: auto;           /* contenedor se ajusta al contenido */
-    min-height: 300px;      /* mínimo para que se vea bien */
-    position: relative;
-    overflow: hidden;
-    padding-top: 70px; /* 60px del navbar + 10px extra */
-  }
-
-  .hero-video-bg {
-    position: absolute;     /* video full cover, no se achica */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  /* Overlay sigue cubriendo video */
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  /* El contenido del hero separado del navbar */
-  .hero-content-fix {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin-top: 100px;  /* espacio arriba entre navbar y contenido */
-    margin-bottom: 50px; /* espacio abajo si querés */
-    padding: 0 1rem;  /* separación horizontal */
-  }
-}
-/*-------------------------- Aplicamos estilos para las tarjetas de los docentes ------------------*/
- 
-
-/* CONTENEDOR GRID */
-#contDocentes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px 0;
-}
-
-@media (max-width: 768px){
-  #contDocentes{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* TARJETA */
-.tarjetaDocente {
-  background: #f9fafb; /* gris muy suave */
-  border-radius: 16px;
-  padding: 15px;
-  text-align: center;
-  transition: all 0.25s ease;
-  border: 1px solid #e5e7eb;
-}
-
-/* HOVER SUAVE */
-.tarjetaDocente:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-/* IMAGEN */
-.imagenDocente {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-
-/* NOMBRE */
-.nombreDocente {
-  font-weight: bold;
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-/* CARGO */
-.cargoDocente {
-  font-size: 14px;
-  color: #6b7280;
-}
-
-
-@media (max-width: 768px) {
-  .contenedorBoton {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
 }

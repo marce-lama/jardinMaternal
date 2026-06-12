@@ -27,32 +27,41 @@
 
    <!------------------------------- CODIGO DEL NAVBAR ------------------------------->
    
-    <nav class="navbar is-fixed-top has-shadow has-background-danger-light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand contenedorLogo">
-            <a class="navbar-item has-text-danger" href="#inicio">
-                <img class="logo2" src="image/logo.png" alt="Logo Jardín Maternal Cuentos y Cuenteretes">
-                <img class="logo" src="image/logo3.png" alt="Logo Jardín Maternal Cuentos y Cuenteretes">
+    <nav class="navbarPrincipal">
+    <div class="navbarContainer">
+
+        <div class="navbar-brand">
+
+            <a class="navbar-item logoNavbar" href="#inicio">
+                <img class="logo2" src="image/logo.png" alt="">
+                <img class="logo" src="image/logo3.png" alt="">
             </a>
 
-            <!-- Botón hamburguesa -->
-            <a role="button" class="navbar-burger navbar-burger-boton" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+            <button
+                class="navbar-burger navbar-burger-boton"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                data-target="navbarMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
 
         <div id="navbarMenu" class="navbar-menu">
-            <div id="menuNavbar" class="navbar-start navbar-center">
-                <!-- Se agregan las secciones desde el array menu.json -->
-                <!-- <a class="navbar-item" href="#inicio">Inicio</a> -->
+            <div id="menuNavbar" class="navbar-start">
+                <!-- JS -->
             </div>
         </div>
-    </nav>
+
+    </div>
+</nav>
 
   <!------------------------------- SECCION PRINCILA BIENVENIDOS------------------------------->
 
-<section id="inicio">
+<section id="inicio" class="seccion-compacta">
     <video id="heroVideo" class="hero-video-bg" autoplay muted loop playsinline preload="auto">
         <source src="videos/hero3.mp4" type="video/mp4">
     </video>
@@ -66,11 +75,11 @@
    
      <!------------------------------- SECCION HISTORIA DEL JARDIN ------------------------------->
 
-    <section id="historia" class="historia">
+    <section id="historia" class="seccion-compacta">
         <div class="container">
             <div class="columns">
                 <div class="column contenedorParrafoHistoria">
-                    <h1 class="tituloHistoria"><strong class="titulosSecciones negrita"> NUESTRA HISTORIA </strong></h1>
+                    <h2 class=""><strong class="titulosSecciones"> NUESTRA HISTORIA </strong></h2>
                     <p class="parrafoHistoria">La historia del jardín maternal y de infantes “Cuentos y Cuenteretes” comenzó a principios del año 2018, con el propósito de dar respuesta a muchas familias que necesitaban un espacio donde sus niños y niñas fueran educados y cuidados con amor, respeto y dedicación. Así fue como Laura y Julieta, madre e hija, dieron inicio a este proyecto, pensado para que cada niño y niña pueda sentirse a gusto, contenido, amado y respetado.</p>
                     <p class="parrafoHistoria">El jardín ofrece una educación basada en valores fundamentales como el respeto, la tolerancia y la paciencia, comprendiendo que los adultos cumplen un rol clave como acompañantes en la etapa más importante del crecimiento de los niños y niñas.</p> 
                     <p class="parrafoHistoria">Si bien no trabajamos desde un único enfoque pedagógico, ya que entendemos que la diversidad está muy presente en la actualidad, consideramos a cada niño como un ser activo, en constante desarrollo y construcción de conocimiento. Por ello, el equipo docente acompaña estos procesos mediante diferentes propuestas enriquecedoras, promoviendo que cada niño y niña sea protagonista de su propio aprendizaje.</p>
@@ -83,55 +92,113 @@
         </div>
     </section>
 
+<!---- ---->
 
-    <!------------------------------- SECCION PROPUESTA EDUCATIVA ------------------------------->
-    
-    <section id="propuestaEducativa">
-        <div class="contenedorSeccionProp">
-            <div class="seccionProp">
+    <section id="propuestaEducativa" class="seccion-compacta">
+        <div class="container">
                 <h2 class="titulosSecciones">PROPUESTA EDUCATIVA</h2>
                 <p class="parrafoSeccionProp">En Cuentos y Cuenteretes creemos que cada niño y niña aprende mejor cuando se siente seguro, acompañado y motivado. Nuestra propuesta educativa se basa en cuatro ejes fundamentales que guían cada una de nuestras actividades y experiencias diarias.</p>
-            </div>
-            <div class="fixed-grid has-2-cols grid-wrapper">
-                    <div class="grid contenedorProp ">
-                        <div class="cell es-imagen">
-                            <img class="imagenProp" src="image/propuestaEducativa/imagenLudico.webp" alt="">
-                        </div>
-                        <div class="cell es-texto">
-                            <h2 class="tituloProp">Aprendizaje lúdico</h2>
-                            <p class="parrafoProp">El juego es la principal herramienta de aprendizaje en la primera infancia. A través de propuestas lúdicas, los niños y niñas exploran, descubren, experimentan y construyen conocimientos de manera natural y significativa. El juego favorece la curiosidad, la imaginación y el desarrollo de habilidades sociales, cognitivas y emocionales.</p>
-                        </div>
-                        <div class="cell es-texto">
-                            <h2 class="tituloProp">Arte y creatividad</h2>
-                            <p class="parrafoProp">El arte es una forma de expresión esencial en la infancia. Promovemos espacios donde los niños y niñas puedan crear libremente, expresarse con colores, sonidos, movimientos y palabras, desarrollando su sensibilidad, autoestima y creatividad. Cada producción es valorada como única y personal.</p>
-                        </div>
-                        <div class="cell es-imagen">
-                            <img class="imagenProp" src="image/propuestaEducativa/imagenCreativo.webp" alt="">
-                        </div>
-                        <div class="cell es-imagen">
-                            <img class="imagenProp" src="image/propuestaEducativa/imagenNaturaleza.webp" alt="">
-                        </div>
-                        <div class="cell es-texto">
-                            <h2 class="tituloProp">Naturaleza y exploración</h2>
-                            <p class="parrafoProp">El contacto con la naturaleza y la exploración del entorno son fundamentales para el aprendizaje. Proponemos actividades que invitan a observar, investigar y descubrir el mundo que nos rodea, despertando el interés, el cuidado del ambiente y el respeto por la vida natural desde edades tempranas.</p>
-                        </div>
-                        <div class="cell es-texto">
-                            <h2 class="tituloProp">Valores y convivencia</h2>
-                            <p class="parrafoProp">Acompañamos a los niños y niñas en la construcción de vínculos basados en el respeto, la solidaridad y la empatía. Fomentamos la convivencia, el diálogo y la resolución pacífica de conflictos, entendiendo que aprender a vivir con otros es parte esencial del crecimiento.</p>
-                        </div>
-                        <div class="cell es-imagen">
-                            <img class="imagenProp" src="image/propuestaEducativa/imagenValores.webp" alt="">
-                        </div>
+            <div class="gridPropuesta">
+                <div class="is-gap-6 gridProp">
+                    <!-- Card 1 -->
+                     <div class="cell">
+                        <article class="card cardPropuesta">
+
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="image/propuestaEducativa/imagenLudico.webp"
+                                        alt="Aprendizaje lúdico">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <h3 class="tituloProp">
+                                    Aprendizaje lúdico
+                                </h3>
+
+                                <p class="parrafoProp">
+                                    El juego es la principal herramienta de aprendizaje en la primera infancia. A través de propuestas lúdicas, los niños y niñas exploran, descubren, experimentan y construyen conocimientos de manera natural y significativa. El juego favorece la curiosidad, la imaginación y el desarrollo de habilidades sociales, cognitivas y emocionales.
+                                </p>
+                            </div>
+
+                        </article>
                     </div>
+                    <!-- Card 2 -->
+                     <div class="cell">
+                        <article class="card cardPropuesta">
+
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="image/propuestaEducativa/imagenCreativo.webp"
+                                        alt="Arte y creatividad">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <h3 class="tituloProp">
+                                    Arte y creatividad
+                                </h3>
+
+                                <p class="parrafoProp">
+                                    El arte es una forma de expresión esencial en la infancia. Promovemos espacios donde los niños y niñas puedan crear libremente, expresarse con colores, sonidos, movimientos y palabras, desarrollando su sensibilidad, autoestima y creatividad. Cada producción es valorada como única y personal.</p>
+                            </div>
+
+                        </article>
+                    </div>
+                    <!-- Card 3 -->
+                     <div class="cell">
+                        <article class="card cardPropuesta">
+
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="image/propuestaEducativa/imagenNaturaleza.webp"
+                                        alt="Naturaleza y exploración">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <h3 class="tituloProp">
+                                    Naturaleza y exploración
+                                </h3>
+
+                                <p class="parrafoProp">
+                                    El contacto con la naturaleza y la exploración del entorno son fundamentales para el aprendizaje. Proponemos actividades que invitan a observar, investigar y descubrir el mundo que nos rodea, despertando el interés, el cuidado del ambiente y el respeto por la vida natural desde edades tempranas.</p>
+                            </div>
+
+                        </article>
+                    </div>
+                    <!-- Card 4 -->
+                     <div class="cell">
+                        <article class="card cardPropuesta">
+
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="image/propuestaEducativa/imagenValores.webp"
+                                        alt="Valores y convivencia">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <h3 class="tituloProp">
+                                    Valores y convivencia
+                                </h3>
+
+                                <p class="parrafoProp">
+                                    Acompañamos a los niños y niñas en la construcción de vínculos basados en el respeto, la solidaridad y la empatía. Fomentamos la convivencia, el diálogo y la resolución pacífica de conflictos, entendiendo que aprender a vivir con otros es parte esencial del crecimiento.</p>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
             </div>
-        </div>
+         </div>   
     </section>
 
     <!------------------------------- SECCION EQUIPO ------------------------------->
 
-    <section id="equipo" >
-        <h2 class="titulosSecciones">NUESTRO EQUIPO</h2>
-        <div class="contenedorEquipoDocente">
+    <section id="equipo" class="seccion-compacta">
+        <div class="container">
+            <h2 class="titulosSecciones">NUESTRO EQUIPO</h2>
             <div class="fixed-grid has-3-cols has-2-cols-mobile">
                 <div id="contDocentes" class="grid is-row-gap-6 contenedorDocentes card-docente">
                     <!-- Se agregan los docentes desde el array docentes.json -->
@@ -139,15 +206,15 @@
             </div>
         </div>
         <div class="contenedorBoton">
-            <button id="botonExpan" type="button" class="button buttonEquipo is-primary is-normal is-link is-outlined"> Ver más</button>
+            <button id="botonExpan" type="button" class="button boton-seccion boton-seccion-equipo is-primary is-normal is-link is-outlined"> Ver más</button>
         </div>
     </section>
 
     <!------------------------------- SECCION INSTALACIONES DEL JARDIN ------------------------------->
 
-    <section id="instalaciones" class="instalaciones">
-        <h2 class="titulosSecciones">NUESTRAS INSTALACIONES</h2>
-        <div class="contenedorInstal">
+    <section id="instalaciones" class="seccion-compacta">
+        <div class="container">
+            <h2 class="titulosSecciones">NUESTRAS INSTALACIONES</h2>
 
             <div class="galeria-instalaciones">
 
@@ -174,32 +241,32 @@
             </div>
         </div>
         <div class="contenedorBoton">
-            <button id="btnInstalaciones" type="button" class="button buttonInstal is-primary is-normal is-link is-outlined"> Ver más</button>
+            <button id="btnInstalaciones" type="button" class="button boton-seccion boton-seccion-instalaciones is-primary is-normal is-link is-outlined"> Ver más</button>
         </div>
     </section>
 
     <!------------------------------- SECCION ACTIVADES DEL JARDIN ------------------------------->
    
-    <section id="actividades" class="actividades">
-        <h2 class="titulosSecciones">ACTIVIDADES</h2>
-
-        <div class="containerActivity fixed-grid has-4-cols-desktop has-3-cols-tablet has-2-cols-mobile">
-            <div id="contenedorActividades" class="grid is-gap-0">
-                <!--Se agregan las imagenes de actividades desde el array actividades.json -->
+    <section id="actividades" class="seccion-compacta">
+        <div class="container">
+            <h2 class="titulosSecciones">ACTIVIDADES</h2>
+            <div class="containerActivity fixed-grid has-4-cols-desktop has-3-cols-tablet has-2-cols-mobile">
+                <div id="contenedorActividades" class="grid is-gap-2">
+                    <!--Se agregan las imagenes de actividades desde el array actividades.json-->
+                </div>
             </div>
-        </div>
 
-        <div class="contenedorBotonAct">
-            <button id="verMas" type="button" class="button buttonActividad is-primary is-normal is-link is-outlined"> Ver más</button>
-        </div>
-               
+            <div class="contenedorBoton">
+                <button id="verMas" type="button" class="button boton-seccion boton-seccion-actividades is-primary is-normal is-link is-outlined"> Ver más</button>
+            </div>
+        </div>   
     </section>
 
      <!------------------------------- SECCION HORARIOS DEL JARDIN ------------------------------->
     
-    <section id="horarios" class="horarios">
-        <h2 class="titulosSecciones">HORARIOS</h2>
+    <section id="horarios" class="seccion-compacta">
         <div class="container">
+            <h2 class="titulosSecciones">HORARIOS</h2>
             <div class="contenedorHorarios">
                 <p class="parrafoHorarios">
                 Los horarios del jardín son flexibles y están pensados para acompañar
@@ -210,7 +277,7 @@
             <div class="columns is-centered is-multiline contenedorCard">
                 <div class="column is-4">
                     <div class="card horario-card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered tarjetaHorarios">
                             <h3 class="title is-5">Pre y Pos hora</h3>
                             <p>Desde las <strong class="negrita">7:00</strong> hs hasta las <strong class="negrita">18:00</strong> hs</p>
                         </div>
@@ -219,7 +286,7 @@
 
                 <div class="column is-4">
                     <div class="card horario-card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered tarjetaHorarios">
                             <h3 class="title is-5">Turno Mañana</h3>
                             <p><strong>8:00</strong> a <strong>12:00</strong> hs</p>
                         </div>
@@ -228,7 +295,7 @@
 
                 <div class="column is-4">
                     <div class="card horario-card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered tarjetaHorarios">
                             <h3 class="title is-5">Turno Tarde</h3>
                             <p><strong>13:00</strong> a <strong>17:00</strong> hs</p>
                         </div>
@@ -236,7 +303,7 @@
                 </div>
                 <div class="column is-4">
                     <div class="card horario-card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered tarjetaHorarios">
                             <h3 class="title is-5">Doble Jornada</h3>
                             <p><strong>08:00</strong> a <strong>17:00</strong> hs</p>
                         </div>
@@ -244,7 +311,7 @@
                 </div>
                 <div class="column is-4">
                     <div class="card horario-card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered tarjetaHorarios">
                             <h3 class="title is-5">Jornada Extendida</h3>
                             <p>Ej: <strong>08:00</strong> a <strong>15:00</strong> hs</p>
                         </div>
@@ -256,9 +323,9 @@
 
      <!------------------------------- SECCION INSCRIPCION DEL JARDIN ------------------------------->
     
-    <section id="inscripciones" class="inscripciones">
-        <h2 class="titulosSecciones">INSCRIPCIONES</h2>
-        <div class="container containerInscrip">
+    <section id="inscripciones" class="seccion-compacta">
+        <div class="container">
+            <h2 class="titulosSecciones">INSCRIPCIONES</h2>
             <article class="message">
                 <div class="message-header colorArticle1">
                     <p>Matriculaciones Abiertas todo el año</p>
@@ -283,105 +350,136 @@
 
      <!------------------------------- SECCION CONTACTO DEL JARDIN ------------------------------->
     
-    <section id="contacto" class="contacto">
-        <div >
+        <section id="contacto" class="seccion-compacta">
+        <div class="container">
+
             <h2 class="titulosSecciones">CONTACTO</h2>
-        </div>
-        <div class="contenedorContactos">
-            <div class="contenedorMapa">
-                <div class="mapa-wrapper">
-                    <iframe class="mapaG" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.6911313123956!2d-58.71168582521689!3d-34.5360525539261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd1406a758d9%3A0x98d08b13471a2502!2sJard%C3%ADn%20Maternal%20y%20de%20Infantes%20Cuentos%20y%20Cuenteretes!5e0!3m2!1ses!2sar!4v1767419783319!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-                </div>
-                <div>
-                    <p class="direccionJardin">San Lorenzo 1744, San Miguel, Buenos Aires</p>
-                </div>
-            </div>
-            <form action="https://formspree.io/f/xnjrklre" method="POST" class="form">
-                <input type="hidden" name="_next" value="https://marce-lama.github.io/jardinMaternal/pages/gracias.html">
-                <div class="contenedorForm">
-                    <div>
-                        <input type="hidden" name="_subject" value="Nueva consulta desde la web del Jardín Maternal">
-                        <input type="text" name="_gotcha" style="display:none">
+
+            <div class="contactoGrid">
+
+                <!-- MAPA -->
+                <div class="infoContacto">
+
+                    <div class="mapaWrapper">
+                        <iframe class="mapaG" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.691131312378!2d-58.71168582496255!3d-34.536052553926545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd1406a758d9%3A0x98d08b13471a2502!2sJard%C3%ADn%20Maternal%20y%20de%20Infantes%20Cuentos%20y%20Cuenteretes!5e0!3m2!1ses!2sar!4v1781206682020!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+
+                    <p class="direccionJardin">
+                        San Lorenzo 1744, San Miguel, Buenos Aires
+                    </p>
+
+                </div>
+
+                <!-- FORMULARIO -->
+                <form
+                    action="https://formspree.io/f/xnjrklre"
+                    method="POST"
+                    class="formularioContacto">
+
+                    <input type="hidden" name="_next" value="https://marce-lama.github.io/jardinMaternal/pages/gracias.html">
+
+                    <input type="hidden"
+                        name="_subject"
+                        value="Nueva consulta desde la web del Jardín Maternal">
+
+                    <input type="text"
+                        name="_gotcha"
+                        style="display:none">
 
                     <div class="field">
                         <label class="label">Nombre</label>
-                        <div class="control">
-                            <input class="input colorInput" type="text" name="nombre" required>
-                        </div>
+                        <input class="input" type="text" name="nombre" required>
                     </div>
+
                     <div class="field">
                         <label class="label">Email</label>
-                        <div class="control">
-                            <input class="input" type="email" name="email" required>
-                        </div>
+                        <input class="input" type="email" name="email" required>
                     </div>
+
                     <div class="field">
                         <label class="label">Mensaje</label>
-                        <div class="control">
-                            <textarea class="textarea" name="mensaje" required></textarea>
-                        </div>
+                        <textarea class="textarea" name="mensaje" required></textarea>
                     </div>
-                    <div class="control">
-                        <button class="button buttonContact is-primary is-primary is-normal is-link is-outlined" type="submit">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
 
+                    <button
+                        class="button boton-seccion boton-seccion-form is-primary is-link is-outlined"
+                        type="submit">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
     </section>
 
     <!------------------------------- SECCION FOOTER ------------------------------->
 
-    <footer>
+    <footer class="footerPrincipal">
+    <div class="container">
+
         <div class="footerContenedor">
-            <div>
+
+            <nav class="footerMenu">
                 <ul id="menuFooter">
-                    <!-- Se agregan las secciones desde el array menu.json -->
-                    <!-- <li ><a class="colorSeccionesFooter" href="#inicio">Inicio</a></li> -->
+                    <!-- JS -->
                 </ul>
+            </nav>
+
+            <div class="footerLogo">
+                <img
+                    class="logoCuentos"
+                    src="image/logo2.png"
+                    alt="Logo Jardín Maternal Cuentos y Cuenteretes">
             </div>
-            <div>
-                <img class="logoCuentos" src="image/logo2.png" alt="">
-            </div>
-            <div class="contenedorRedes">
-                <div>
-                    <h4 class="logosRedes">Seguinos en</h4>
-                </div>
+
+            <div class="footerRedes">
+                <h3 class="tituloFooter">Seguinos en</h3>
+
                 <div class="contenedorLogos">
-                    <div>
-                        <a href=""><img src="image/logoWhats.png" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://www.facebook.com/share/1DVYDZp26r/"><img src="image/logoFace.png" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/cuentosycuenteretes?igsh=MXVwMWc2emx1cG5m"><img src="image/logoInst.png" alt=""></a>
-                    </div>
+                    <a href="#" aria-label="WhatsApp">
+                        <img src="image/logoWhats.png" alt="">
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1DVYDZp26r/" aria-label="Facebook">
+                        <img src="image/logoFace.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/cuentosycuenteretes" aria-label="Instagram">
+                        <img src="image/logoInst.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
-        <p class="copyright"> 
-            © 2026 Jardín Maternal Cuentos y Cuenteretes. Todos los derechos reservados.
-        </p>
-        <p class="is-size-7">
-            ML Desarrollo Web - mlserv.digitales@gmail.com
-        </p>
-    </footer>
-            <a href="https://wa.me/541173656707" aria-label="Contactar por WhatsApp">
-                <img class="logoWhatsapp"  src="image/whatsappLogo.png" alt="">
-            </a>
-
-    <div id="modalImagen" class="modal">
-        <span id="cerrarModal" class="cerrar">&times;</span>
-
-        <img id="imagenModal" class="contenidoModal" src="" alt="">
     </div>
 
-    <div id="modalImagenInstalaciones" class="modal">
-        <span id="cerrarModal" class="cerrar">&times;</span>
+        <div class="footerInferior">
+            <p>
+                © 2026 Jardín Maternal Cuentos y Cuenteretes.
+                Todos los derechos reservados.
+            </p>
+        </div>
+        <div class="footerDesarrollador">
+            <p>
+                ML Desarrollo Web · mlserv.digitales@gmail.com
+            </p>
+        </div>
+    </footer>
+            <a href="https://wa.me/541173656707" class="botonWhatsapp" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <img class="logoWhatsapp" src="image/whatsappLogo.png" alt="WhatsApp">
+            </a>
 
-        <img id="imagenModal" class="contenidoModal" src="" alt="">
+    <div id="modalImagenInstalaciones" class="modal">
+        <span id="cerrarModalInstalaciones" class="cerrar">&times;</span>
+
+        <img id="imagenModalInstalaciones" class="contenidoModal" src="" alt="">
+    </div>
+
+    <div id="modalImagenActividades" class="modal">
+        <span id="cerrarModalActividades" class="cerrar">&times;</span>
+
+        <img id="imagenModalActividades" class="contenidoModal" src="" alt="">
     </div>
 
     <script src="js/docentes.js"></script>

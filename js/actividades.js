@@ -74,9 +74,9 @@ botonVerMas.addEventListener("click", () => {
 
 function agregarEventosModal(){
 
-    const modal = document.querySelector("#modalImagen");
-    const imagenModal = document.querySelector("#imagenModal");
-    const cerrarModal = document.querySelector("#cerrarModal");
+    const modal = document.querySelector("#modalImagenActividades");
+    const imagenModal = document.querySelector("#imagenModalActividades");
+    const cerrarModal = document.querySelector("#cerrarModalActividades");
 
     document.querySelectorAll(".linkImagen img").forEach(img => {
 

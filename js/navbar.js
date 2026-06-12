@@ -11,11 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 👉 Cerrar menú al hacer click en cualquier link
   menu.addEventListener('click', (e) => {
-    if (e.target.classList.contains('navbar-item')) {
-      burger.classList.remove('is-active');
-      menu.classList.remove('is-active');
-    }
-  });
+  if (e.target.tagName === 'A') {
+    burger.classList.remove('is-active');
+    menu.classList.remove('is-active');
+  }});
 
 });
 
